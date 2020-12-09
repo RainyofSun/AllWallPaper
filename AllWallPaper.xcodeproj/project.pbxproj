@@ -56,6 +56,7 @@
 		13451A2A257DF7C20031F004 /* AWHeadPortraitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13451A28257DF7C20031F004 /* AWHeadPortraitViewController.xib */; };
 		13451A2E257DF7E20031F004 /* AWStaticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13451A2C257DF7E20031F004 /* AWStaticViewController.m */; };
 		13451A2F257DF7E20031F004 /* AWStaticViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13451A2D257DF7E20031F004 /* AWStaticViewController.xib */; };
+		22C523542580D88400BACBD5 /* AllWallPaperSource.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C523532580D88400BACBD5 /* AllWallPaperSource.xcassets */; };
 		2D7C4C015B7C541BEC567DEC /* Pods_AllWallPaper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC8E82A204E4D322AE40E74 /* Pods_AllWallPaper.framework */; };
 /* End PBXBuildFile section */
 
@@ -158,6 +159,7 @@
 		13451A2B257DF7E20031F004 /* AWStaticViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWStaticViewController.h; sourceTree = "<group>"; };
 		13451A2C257DF7E20031F004 /* AWStaticViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWStaticViewController.m; sourceTree = "<group>"; };
 		13451A2D257DF7E20031F004 /* AWStaticViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AWStaticViewController.xib; sourceTree = "<group>"; };
+		22C523532580D88400BACBD5 /* AllWallPaperSource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AllWallPaperSource.xcassets; sourceTree = "<group>"; };
 		7AC8E82A204E4D322AE40E74 /* Pods_AllWallPaper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AllWallPaper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9381F60F10EAC14A42164A45 /* Pods-AllWallPaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllWallPaper.debug.xcconfig"; path = "Target Support Files/Pods-AllWallPaper/Pods-AllWallPaper.debug.xcconfig"; sourceTree = "<group>"; };
 		AD2A5508B9F0E27A785774D2 /* Pods-AllWallPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllWallPaper.release.xcconfig"; path = "Target Support Files/Pods-AllWallPaper/Pods-AllWallPaper.release.xcconfig"; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				13451978257DDE0F0031F004 /* Info.plist */,
 				13451979257DDE0F0031F004 /* main.m */,
 				1345198B257DDF260031F004 /* PrefixHeader.pch */,
+				22C523532580D88400BACBD5 /* AllWallPaperSource.xcassets */,
 			);
 			path = AppSource;
 			sourceTree = "<group>";
@@ -689,6 +692,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13451977257DDE0F0031F004 /* LaunchScreen.storyboard in Resources */,
+				22C523542580D88400BACBD5 /* AllWallPaperSource.xcassets in Resources */,
 				13451A2F257DF7E20031F004 /* AWStaticViewController.xib in Resources */,
 				13451A0A257DE6AE0031F004 /* AWMainViewController.xib in Resources */,
 				134519E4257DE1BF0031F004 /* ZXCategoryItemView.xib in Resources */,
