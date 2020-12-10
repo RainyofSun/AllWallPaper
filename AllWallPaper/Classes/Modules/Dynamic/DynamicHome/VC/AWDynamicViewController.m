@@ -7,8 +7,12 @@
 //
 
 #import "AWDynamicViewController.h"
+#import "AWDynamicViewModel.h"
 
 @interface AWDynamicViewController ()
+
+/** dynamicVM */
+@property (nonatomic,strong) AWDynamicViewModel *dynamicVM;
 
 @end
 
@@ -17,6 +21,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self.dynamicVM loadMainDynamicView:self.view];
+}
+
+#pragma mark - lazy
+- (AWDynamicViewModel *)dynamicVM {
+    if (!_dynamicVM) {
+        _dynamicVM = [[AWDynamicViewModel alloc] init];
+    }
+    return _dynamicVM;
 }
 
 /*

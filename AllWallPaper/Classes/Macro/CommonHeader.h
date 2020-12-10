@@ -43,5 +43,7 @@
 #import "XLPageViewController.h"
 #import "FWRefreshHeader.h"
 #import "FWRefreshFooter.h"
+#import "MPLocalData.h"
+#import "AppCycleScrollview.h"
 
 #endif /* CommonHeader_h */
