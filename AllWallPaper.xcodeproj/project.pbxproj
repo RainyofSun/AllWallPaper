@@ -112,12 +112,8 @@
 		22C523D42581DC1D00BACBD5 /* tianQi0.json in Resources */ = {isa = PBXBuildFile; fileRef = 22C523D12581DC1D00BACBD5 /* tianQi0.json */; };
 		22C523D52581DC1D00BACBD5 /* tianQi2.json in Resources */ = {isa = PBXBuildFile; fileRef = 22C523D22581DC1D00BACBD5 /* tianQi2.json */; };
 		22C523D82581DC5600BACBD5 /* phone0.json in Resources */ = {isa = PBXBuildFile; fileRef = 22C523D72581DC5600BACBD5 /* phone0.json */; };
-		22C523DC2581DC9500BACBD5 /* chengQing1.json in Resources */ = {isa = PBXBuildFile; fileRef = 22C523DA2581DC9500BACBD5 /* chengQing1.json */; };
-		22C523DD2581DC9500BACBD5 /* chengQing0.json in Resources */ = {isa = PBXBuildFile; fileRef = 22C523DB2581DC9500BACBD5 /* chengQing0.json */; };
-		22C523F62581DE7300BACBD5 /* AppCycleScrollview.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C523F22581DE7300BACBD5 /* AppCycleScrollview.m */; };
-		22C523F72581DE7300BACBD5 /* AppPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C523F32581DE7300BACBD5 /* AppPageControl.m */; };
-		22C523F82581DE7300BACBD5 /* AppCycleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C523F42581DE7300BACBD5 /* AppCycleCollectionViewCell.m */; };
-		22C523F92581DE7300BACBD5 /* AppCycleScrollviewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C523F52581DE7300BACBD5 /* AppCycleScrollviewFlowLayout.m */; };
+		22C523DC2581DC9500BACBD5 /* chenQing1.json in Resources */ = {isa = PBXBuildFile; fileRef = 22C523DA2581DC9500BACBD5 /* chenQing1.json */; };
+		22C523DD2581DC9500BACBD5 /* chenQing0.json in Resources */ = {isa = PBXBuildFile; fileRef = 22C523DB2581DC9500BACBD5 /* chenQing0.json */; };
 		22C523FD2581EB0900BACBD5 /* AWDynamicViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C523FC2581EB0900BACBD5 /* AWDynamicViewModel.m */; };
 		22C524012581F2E700BACBD5 /* AWDynamicMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C524002581F2E700BACBD5 /* AWDynamicMainView.m */; };
 		22C524032581F2FE00BACBD5 /* AWDynamicMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C524022581F2FE00BACBD5 /* AWDynamicMainView.xib */; };
@@ -127,6 +123,20 @@
 		22C5241C258218F200BACBD5 /* AWDynamicSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C5241B258218F200BACBD5 /* AWDynamicSectionHeaderView.xib */; };
 		22C5241F25821B9600BACBD5 /* AWDynamicFenLeiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C5241E25821B9600BACBD5 /* AWDynamicFenLeiTableViewCell.m */; };
 		22C5242725821E6E00BACBD5 /* AWFenLeiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C5242625821E6E00BACBD5 /* AWFenLeiModel.m */; };
+		22C5242B2583154400BACBD5 /* AWDynamicDiscoverTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C5242A2583154400BACBD5 /* AWDynamicDiscoverTableViewCell.m */; };
+		22C5242E258329CF00BACBD5 /* AWDynamicDiscoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C5242D258329CF00BACBD5 /* AWDynamicDiscoverView.m */; };
+		22C5243825833FBE00BACBD5 /* AppCycleScrollview.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C5243425833FBE00BACBD5 /* AppCycleScrollview.m */; };
+		22C5243925833FBE00BACBD5 /* AppPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C5243525833FBE00BACBD5 /* AppPageControl.m */; };
+		22C5243A25833FBE00BACBD5 /* AppCycleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C5243625833FBE00BACBD5 /* AppCycleCollectionViewCell.m */; };
+		22C5243B25833FBE00BACBD5 /* AppCycleScrollviewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C5243725833FBE00BACBD5 /* AppCycleScrollviewFlowLayout.m */; };
+		22C5243E2583408F00BACBD5 /* AWDynamicSliderBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C5243D2583408F00BACBD5 /* AWDynamicSliderBar.m */; };
+		22C52441258341DD00BACBD5 /* AWDynamicDiscoverViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C52440258341DD00BACBD5 /* AWDynamicDiscoverViewModel.m */; };
+		22C524442583429F00BACBD5 /* AWDiscoverDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C524432583429F00BACBD5 /* AWDiscoverDataTool.m */; };
+		22E8183725834FAF0064F319 /* AWDiscoverCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E8183625834FAF0064F319 /* AWDiscoverCollectionView.m */; };
+		22E8183B2583516D0064F319 /* AWDiscoverCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E818392583516D0064F319 /* AWDiscoverCollectionViewCell.m */; };
+		22E8183C2583516D0064F319 /* AWDiscoverCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22E8183A2583516D0064F319 /* AWDiscoverCollectionViewCell.xib */; };
+		22E8183F2583523C0064F319 /* AWDiscoverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E8183E2583523C0064F319 /* AWDiscoverModel.m */; };
+		22E818422583829A0064F319 /* AWDynamicItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E818412583829A0064F319 /* AWDynamicItem.m */; };
 		2D7C4C015B7C541BEC567DEC /* Pods_AllWallPaper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC8E82A204E4D322AE40E74 /* Pods_AllWallPaper.framework */; };
 /* End PBXBuildFile section */
 
@@ -285,16 +295,8 @@
 		22C523D12581DC1D00BACBD5 /* tianQi0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tianQi0.json; sourceTree = "<group>"; };
 		22C523D22581DC1D00BACBD5 /* tianQi2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tianQi2.json; sourceTree = "<group>"; };
 		22C523D72581DC5600BACBD5 /* phone0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phone0.json; sourceTree = "<group>"; };
-		22C523DA2581DC9500BACBD5 /* chengQing1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chengQing1.json; sourceTree = "<group>"; };
-		22C523DB2581DC9500BACBD5 /* chengQing0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chengQing0.json; sourceTree = "<group>"; };
-		22C523EE2581DE7300BACBD5 /* AppCycleScrollview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCycleScrollview.h; sourceTree = "<group>"; };
-		22C523EF2581DE7300BACBD5 /* AppPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppPageControl.h; sourceTree = "<group>"; };
-		22C523F02581DE7300BACBD5 /* AppCycleCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCycleCollectionViewCell.h; sourceTree = "<group>"; };
-		22C523F12581DE7300BACBD5 /* AppCycleScrollviewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCycleScrollviewFlowLayout.h; sourceTree = "<group>"; };
-		22C523F22581DE7300BACBD5 /* AppCycleScrollview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCycleScrollview.m; sourceTree = "<group>"; };
-		22C523F32581DE7300BACBD5 /* AppPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppPageControl.m; sourceTree = "<group>"; };
-		22C523F42581DE7300BACBD5 /* AppCycleCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCycleCollectionViewCell.m; sourceTree = "<group>"; };
-		22C523F52581DE7300BACBD5 /* AppCycleScrollviewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCycleScrollviewFlowLayout.m; sourceTree = "<group>"; };
+		22C523DA2581DC9500BACBD5 /* chenQing1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chenQing1.json; sourceTree = "<group>"; };
+		22C523DB2581DC9500BACBD5 /* chenQing0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chenQing0.json; sourceTree = "<group>"; };
 		22C523FB2581EB0900BACBD5 /* AWDynamicViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWDynamicViewModel.h; sourceTree = "<group>"; };
 		22C523FC2581EB0900BACBD5 /* AWDynamicViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWDynamicViewModel.m; sourceTree = "<group>"; };
 		22C523FF2581F2E700BACBD5 /* AWDynamicMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWDynamicMainView.h; sourceTree = "<group>"; };
@@ -311,6 +313,33 @@
 		22C5241E25821B9600BACBD5 /* AWDynamicFenLeiTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWDynamicFenLeiTableViewCell.m; sourceTree = "<group>"; };
 		22C5242525821E6E00BACBD5 /* AWFenLeiModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWFenLeiModel.h; sourceTree = "<group>"; };
 		22C5242625821E6E00BACBD5 /* AWFenLeiModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWFenLeiModel.m; sourceTree = "<group>"; };
+		22C524292583154400BACBD5 /* AWDynamicDiscoverTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWDynamicDiscoverTableViewCell.h; sourceTree = "<group>"; };
+		22C5242A2583154400BACBD5 /* AWDynamicDiscoverTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWDynamicDiscoverTableViewCell.m; sourceTree = "<group>"; };
+		22C5242C258329CF00BACBD5 /* AWDynamicDiscoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWDynamicDiscoverView.h; sourceTree = "<group>"; };
+		22C5242D258329CF00BACBD5 /* AWDynamicDiscoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWDynamicDiscoverView.m; sourceTree = "<group>"; };
+		22C5243025833FBE00BACBD5 /* AppCycleScrollview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCycleScrollview.h; sourceTree = "<group>"; };
+		22C5243125833FBE00BACBD5 /* AppPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppPageControl.h; sourceTree = "<group>"; };
+		22C5243225833FBE00BACBD5 /* AppCycleCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCycleCollectionViewCell.h; sourceTree = "<group>"; };
+		22C5243325833FBE00BACBD5 /* AppCycleScrollviewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCycleScrollviewFlowLayout.h; sourceTree = "<group>"; };
+		22C5243425833FBE00BACBD5 /* AppCycleScrollview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCycleScrollview.m; sourceTree = "<group>"; };
+		22C5243525833FBE00BACBD5 /* AppPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppPageControl.m; sourceTree = "<group>"; };
+		22C5243625833FBE00BACBD5 /* AppCycleCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCycleCollectionViewCell.m; sourceTree = "<group>"; };
+		22C5243725833FBE00BACBD5 /* AppCycleScrollviewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCycleScrollviewFlowLayout.m; sourceTree = "<group>"; };
+		22C5243C2583408F00BACBD5 /* AWDynamicSliderBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWDynamicSliderBar.h; sourceTree = "<group>"; };
+		22C5243D2583408F00BACBD5 /* AWDynamicSliderBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWDynamicSliderBar.m; sourceTree = "<group>"; };
+		22C5243F258341DD00BACBD5 /* AWDynamicDiscoverViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWDynamicDiscoverViewModel.h; sourceTree = "<group>"; };
+		22C52440258341DD00BACBD5 /* AWDynamicDiscoverViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWDynamicDiscoverViewModel.m; sourceTree = "<group>"; };
+		22C524422583429F00BACBD5 /* AWDiscoverDataTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWDiscoverDataTool.h; sourceTree = "<group>"; };
+		22C524432583429F00BACBD5 /* AWDiscoverDataTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWDiscoverDataTool.m; sourceTree = "<group>"; };
+		22E8183525834FAF0064F319 /* AWDiscoverCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWDiscoverCollectionView.h; sourceTree = "<group>"; };
+		22E8183625834FAF0064F319 /* AWDiscoverCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWDiscoverCollectionView.m; sourceTree = "<group>"; };
+		22E818382583516D0064F319 /* AWDiscoverCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWDiscoverCollectionViewCell.h; sourceTree = "<group>"; };
+		22E818392583516D0064F319 /* AWDiscoverCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWDiscoverCollectionViewCell.m; sourceTree = "<group>"; };
+		22E8183A2583516D0064F319 /* AWDiscoverCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AWDiscoverCollectionViewCell.xib; sourceTree = "<group>"; };
+		22E8183D2583523C0064F319 /* AWDiscoverModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWDiscoverModel.h; sourceTree = "<group>"; };
+		22E8183E2583523C0064F319 /* AWDiscoverModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWDiscoverModel.m; sourceTree = "<group>"; };
+		22E818402583829A0064F319 /* AWDynamicItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWDynamicItem.h; sourceTree = "<group>"; };
+		22E818412583829A0064F319 /* AWDynamicItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWDynamicItem.m; sourceTree = "<group>"; };
 		7AC8E82A204E4D322AE40E74 /* Pods_AllWallPaper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AllWallPaper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9381F60F10EAC14A42164A45 /* Pods-AllWallPaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllWallPaper.debug.xcconfig"; path = "Target Support Files/Pods-AllWallPaper/Pods-AllWallPaper.debug.xcconfig"; sourceTree = "<group>"; };
 		AD2A5508B9F0E27A785774D2 /* Pods-AllWallPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllWallPaper.release.xcconfig"; path = "Target Support Files/Pods-AllWallPaper/Pods-AllWallPaper.release.xcconfig"; sourceTree = "<group>"; };
@@ -397,7 +426,7 @@
 		13451986257DDF0E0031F004 /* Vender */ = {
 			isa = PBXGroup;
 			children = (
-				22C523ED2581DE7300BACBD5 /* APPLoopPage */,
+				22C5242F25833FBE00BACBD5 /* APPLoopPage */,
 				134519CD257DE1BF0031F004 /* ZXScrollPageView */,
 				134519D5257DE1BF0031F004 /* XLPageViewController */,
 				134519C9257DE1940031F004 /* EmptyListView */,
@@ -696,6 +725,10 @@
 			children = (
 				22C523FB2581EB0900BACBD5 /* AWDynamicViewModel.h */,
 				22C523FC2581EB0900BACBD5 /* AWDynamicViewModel.m */,
+				22C5243F258341DD00BACBD5 /* AWDynamicDiscoverViewModel.h */,
+				22C52440258341DD00BACBD5 /* AWDynamicDiscoverViewModel.m */,
+				22C524422583429F00BACBD5 /* AWDiscoverDataTool.h */,
+				22C524432583429F00BACBD5 /* AWDiscoverDataTool.m */,
 			);
 			path = VM;
 			sourceTree = "<group>";
@@ -717,6 +750,8 @@
 				22C524152581FC8400BACBD5 /* AWLoopModel.m */,
 				22C5242525821E6E00BACBD5 /* AWFenLeiModel.h */,
 				22C5242625821E6E00BACBD5 /* AWFenLeiModel.m */,
+				22E8183D2583523C0064F319 /* AWDiscoverModel.h */,
+				22E8183E2583523C0064F319 /* AWDiscoverModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -724,6 +759,7 @@
 		13451A1B257DF76C0031F004 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				22C524282583145300BACBD5 /* DynamicFaXianView */,
 				22C52417258218AE00BACBD5 /* DynamicSubView */,
 				22C524042581F48900BACBD5 /* DynamicLoopView */,
 				22C523FE2581EE9C00BACBD5 /* DynamicMainView */,
@@ -991,25 +1027,10 @@
 		22C523D92581DC5E00BACBD5 /* ChenQing */ = {
 			isa = PBXGroup;
 			children = (
-				22C523DB2581DC9500BACBD5 /* chengQing0.json */,
-				22C523DA2581DC9500BACBD5 /* chengQing1.json */,
+				22C523DB2581DC9500BACBD5 /* chenQing0.json */,
+				22C523DA2581DC9500BACBD5 /* chenQing1.json */,
 			);
 			path = ChenQing;
-			sourceTree = "<group>";
-		};
-		22C523ED2581DE7300BACBD5 /* APPLoopPage */ = {
-			isa = PBXGroup;
-			children = (
-				22C523F02581DE7300BACBD5 /* AppCycleCollectionViewCell.h */,
-				22C523F42581DE7300BACBD5 /* AppCycleCollectionViewCell.m */,
-				22C523EE2581DE7300BACBD5 /* AppCycleScrollview.h */,
-				22C523F22581DE7300BACBD5 /* AppCycleScrollview.m */,
-				22C523F12581DE7300BACBD5 /* AppCycleScrollviewFlowLayout.h */,
-				22C523F52581DE7300BACBD5 /* AppCycleScrollviewFlowLayout.m */,
-				22C523EF2581DE7300BACBD5 /* AppPageControl.h */,
-				22C523F32581DE7300BACBD5 /* AppPageControl.m */,
-			);
-			path = APPLoopPage;
 			sourceTree = "<group>";
 		};
 		22C523FA2581DEA000BACBD5 /* DynamicHome */ = {
@@ -1052,6 +1073,41 @@
 				22C5241E25821B9600BACBD5 /* AWDynamicFenLeiTableViewCell.m */,
 			);
 			path = DynamicSubView;
+			sourceTree = "<group>";
+		};
+		22C524282583145300BACBD5 /* DynamicFaXianView */ = {
+			isa = PBXGroup;
+			children = (
+				22C524292583154400BACBD5 /* AWDynamicDiscoverTableViewCell.h */,
+				22C5242A2583154400BACBD5 /* AWDynamicDiscoverTableViewCell.m */,
+				22C5242C258329CF00BACBD5 /* AWDynamicDiscoverView.h */,
+				22C5242D258329CF00BACBD5 /* AWDynamicDiscoverView.m */,
+				22C5243C2583408F00BACBD5 /* AWDynamicSliderBar.h */,
+				22C5243D2583408F00BACBD5 /* AWDynamicSliderBar.m */,
+				22E8183525834FAF0064F319 /* AWDiscoverCollectionView.h */,
+				22E8183625834FAF0064F319 /* AWDiscoverCollectionView.m */,
+				22E818382583516D0064F319 /* AWDiscoverCollectionViewCell.h */,
+				22E818392583516D0064F319 /* AWDiscoverCollectionViewCell.m */,
+				22E8183A2583516D0064F319 /* AWDiscoverCollectionViewCell.xib */,
+				22E818402583829A0064F319 /* AWDynamicItem.h */,
+				22E818412583829A0064F319 /* AWDynamicItem.m */,
+			);
+			path = DynamicFaXianView;
+			sourceTree = "<group>";
+		};
+		22C5242F25833FBE00BACBD5 /* APPLoopPage */ = {
+			isa = PBXGroup;
+			children = (
+				22C5243025833FBE00BACBD5 /* AppCycleScrollview.h */,
+				22C5243125833FBE00BACBD5 /* AppPageControl.h */,
+				22C5243225833FBE00BACBD5 /* AppCycleCollectionViewCell.h */,
+				22C5243325833FBE00BACBD5 /* AppCycleScrollviewFlowLayout.h */,
+				22C5243425833FBE00BACBD5 /* AppCycleScrollview.m */,
+				22C5243525833FBE00BACBD5 /* AppPageControl.m */,
+				22C5243625833FBE00BACBD5 /* AppCycleCollectionViewCell.m */,
+				22C5243725833FBE00BACBD5 /* AppCycleScrollviewFlowLayout.m */,
+			);
+			path = APPLoopPage;
 			sourceTree = "<group>";
 		};
 		5B8D4A9BB1ED21E8439A0185 /* Frameworks */ = {
@@ -1135,7 +1191,7 @@
 				13451977257DDE0F0031F004 /* LaunchScreen.storyboard in Resources */,
 				22C523852581D73500BACBD5 /* qiu4.json in Resources */,
 				22C523A82581D9BB00BACBD5 /* nanShen3.json in Resources */,
-				22C523DD2581DC9500BACBD5 /* chengQing0.json in Resources */,
+				22C523DD2581DC9500BACBD5 /* chenQing0.json in Resources */,
 				22C523542580D88400BACBD5 /* AllWallPaperSource.xcassets in Resources */,
 				22C523D42581DC1D00BACBD5 /* tianQi0.json in Resources */,
 				22C523832581D73500BACBD5 /* qiu3.json in Resources */,
@@ -1181,6 +1237,7 @@
 				22C523AA2581D9BB00BACBD5 /* nanShen0.json in Resources */,
 				22C523602581D4CC00BACBD5 /* loop1.json in Resources */,
 				22C523D82581DC5600BACBD5 /* phone0.json in Resources */,
+				22E8183C2583516D0064F319 /* AWDiscoverCollectionViewCell.xib in Resources */,
 				22C5239A2581D88700BACBD5 /* wangZhe6.json in Resources */,
 				13451A25257DF7A40031F004 /* AWDynamicViewController.xib in Resources */,
 				22C523C02581DB2300BACBD5 /* laKeSi0.json in Resources */,
@@ -1194,7 +1251,7 @@
 				22C523672581D57400BACBD5 /* miaoSi1.json in Resources */,
 				22C523782581D6AB00BACBD5 /* hot1.json in Resources */,
 				22C524032581F2FE00BACBD5 /* AWDynamicMainView.xib in Resources */,
-				22C523DC2581DC9500BACBD5 /* chengQing1.json in Resources */,
+				22C523DC2581DC9500BACBD5 /* chenQing1.json in Resources */,
 				22C523732581D6AB00BACBD5 /* hot4.json in Resources */,
 				22C523C72581DB7900BACBD5 /* giMie0.json in Resources */,
 				22C5235C2581D47100BACBD5 /* FenLei0.json in Resources */,
@@ -1269,27 +1326,34 @@
 			files = (
 				134519A5257DE1290031F004 /* UIViewController+Navigation.m in Sources */,
 				134519A4257DE1290031F004 /* UIView+GetSuperVC.m in Sources */,
+				22E818422583829A0064F319 /* AWDynamicItem.m in Sources */,
+				22C5243825833FBE00BACBD5 /* AppCycleScrollview.m in Sources */,
 				134519A2257DE1290031F004 /* UIImageView+NetworkImg.m in Sources */,
 				13451A09257DE6AE0031F004 /* AWMainViewController.m in Sources */,
+				22C5243A25833FBE00BACBD5 /* AppCycleCollectionViewCell.m in Sources */,
 				134519A3257DE1290031F004 /* NSObject+DataTransformToDict.m in Sources */,
+				22E8183B2583516D0064F319 /* AWDiscoverCollectionViewCell.m in Sources */,
 				22C5241A258218E000BACBD5 /* AWDynamicSectionHeaderView.m in Sources */,
 				134519A7257DE1290031F004 /* NSObject+SaveImage.m in Sources */,
 				134519E8257DE1BF0031F004 /* XLPageBasicTitleView.m in Sources */,
 				134519E2257DE1BF0031F004 /* ZXPageCollectionView.m in Sources */,
 				22C524072581F4A100BACBD5 /* AWDynamicLoopView.m in Sources */,
+				22E8183F2583523C0064F319 /* AWDiscoverModel.m in Sources */,
 				13451A2E257DF7E20031F004 /* AWStaticViewController.m in Sources */,
 				134519E3257DE1BF0031F004 /* ZXCategorySliderBar.m in Sources */,
 				134519C8257DE1840031F004 /* UIView+AutoLayout.m in Sources */,
 				22C524012581F2E700BACBD5 /* AWDynamicMainView.m in Sources */,
+				22C524442583429F00BACBD5 /* AWDiscoverDataTool.m in Sources */,
+				22C5242B2583154400BACBD5 /* AWDynamicDiscoverTableViewCell.m in Sources */,
 				13451A29257DF7C20031F004 /* AWHeadPortraitViewController.m in Sources */,
 				22C523FD2581EB0900BACBD5 /* AWDynamicViewModel.m in Sources */,
 				134519EB257DE1BF0031F004 /* XLPageViewControllerUtil.m in Sources */,
 				134519FD257DE5200031F004 /* AWBaseViewController.m in Sources */,
-				22C523F82581DE7300BACBD5 /* AppCycleCollectionViewCell.m in Sources */,
 				134519E9257DE1BF0031F004 /* XLPageViewControllerConfig.m in Sources */,
 				22C524162581FC8400BACBD5 /* AWLoopModel.m in Sources */,
 				134519BF257DE1740031F004 /* FWRefreshFooter.m in Sources */,
 				134519F3257DE2880031F004 /* AWBaseModel.m in Sources */,
+				22C5243925833FBE00BACBD5 /* AppPageControl.m in Sources */,
 				134519E5257DE1BF0031F004 /* ZXCategoryItemView.m in Sources */,
 				134519C3257DE1740031F004 /* EGLSBackupMessage.m in Sources */,
 				134519A6257DE1290031F004 /* UIButton+Networking.m in Sources */,
@@ -1299,25 +1363,27 @@
 				13451969257DDE0A0031F004 /* AppDelegate.m in Sources */,
 				134519C0257DE1740031F004 /* FWRefreshHeader.m in Sources */,
 				134519CC257DE1940031F004 /* UIScrollView+EmptyDataSet.m in Sources */,
+				22C5242E258329CF00BACBD5 /* AWDynamicDiscoverView.m in Sources */,
 				134519F0257DE2470031F004 /* AWBaseViewModel.m in Sources */,
 				13451A04257DE64C0031F004 /* AWCommonCache.m in Sources */,
+				22C5243B25833FBE00BACBD5 /* AppCycleScrollviewFlowLayout.m in Sources */,
 				134519FE257DE5200031F004 /* AWTabBarViewController.m in Sources */,
 				13451A0F257DE6CE0031F004 /* AWMainViewModel.m in Sources */,
 				134519C1257DE1740031F004 /* RuntimeTool.m in Sources */,
 				134519A8257DE1290031F004 /* UIButton+CustomBtn.m in Sources */,
 				134519C2257DE1740031F004 /* FLModuleMsgSend.m in Sources */,
+				22C5243E2583408F00BACBD5 /* AWDynamicSliderBar.m in Sources */,
 				13451A00257DE5200031F004 /* AWNavigationViewController.m in Sources */,
 				134519BE257DE1740031F004 /* MPLocalData.m in Sources */,
-				22C523F92581DE7300BACBD5 /* AppCycleScrollviewFlowLayout.m in Sources */,
 				13451A24257DF7A40031F004 /* AWDynamicViewController.m in Sources */,
 				1345198A257DDF180031F004 /* Reachability.m in Sources */,
-				22C523F72581DE7300BACBD5 /* AppPageControl.m in Sources */,
 				134519E6257DE1BF0031F004 /* XLPageViewController.m in Sources */,
-				22C523F62581DE7300BACBD5 /* AppCycleScrollview.m in Sources */,
 				22C5242725821E6E00BACBD5 /* AWFenLeiModel.m in Sources */,
 				1345197A257DDE0F0031F004 /* main.m in Sources */,
 				134519FF257DE5200031F004 /* AWBaseViewController+CatchMsg.m in Sources */,
 				134519EA257DE1BF0031F004 /* XLPageTitleCell.m in Sources */,
+				22E8183725834FAF0064F319 /* AWDiscoverCollectionView.m in Sources */,
+				22C52441258341DD00BACBD5 /* AWDynamicDiscoverViewModel.m in Sources */,
 				134519A9257DE1290031F004 /* UINavigationController+NavigationBar.m in Sources */,
 				134519E7257DE1BF0031F004 /* XLPageSegmentedTitleView.m in Sources */,
 			);

@@ -52,7 +52,7 @@
 #pragma mark - private methods
 - (void)setupImgBannerView {
     self.imgBannerView = [AppCycleScrollview appCycleScrollViewWithFrame:CGRectMake(0, 0, ScreenWidth, self.loopH) shouldInfiniteLoop:YES cycleDelegate:self];
-    self.imgBannerView.autoScrollTimeInterval = 3.0f;
+    self.imgBannerView.autoScrollTimeInterval = 2.0f;
     self.imgBannerView.isZoom = NO;
     self.imgBannerView.heightProportion = 1;
     self.imgBannerView.itemWidth = ScreenWidth;

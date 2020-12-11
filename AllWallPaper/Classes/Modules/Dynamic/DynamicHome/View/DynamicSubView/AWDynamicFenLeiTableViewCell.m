@@ -12,6 +12,8 @@
 
 /** scrollView */
 @property (nonatomic,strong) UIScrollView *scrollView;
+/** hasBuilded */
+@property (nonatomic,assign) BOOL hasBuiled;
 
 @end
 
@@ -19,6 +21,8 @@
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.hasBuiled = NO;
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
         [self setupScrollView];
     }
     return self;
@@ -34,6 +38,9 @@
 
 #pragma mark - public methods
 - (void)loadFenLeiTableViewCellSource:(NSArray<AWFenLeiModel *> *)cellSource {
+    if (!cellSource.count || self.hasBuiled) {
+        return;
+    }
     [self setupItems:cellSource];
 }
 
@@ -95,6 +102,7 @@
         [item addTarget:self action:@selector(selectedFenLei:) forControlEvents:UIControlEventTouchUpInside];
         [self.scrollView addSubview:item];
     }
+    self.hasBuiled = YES;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
