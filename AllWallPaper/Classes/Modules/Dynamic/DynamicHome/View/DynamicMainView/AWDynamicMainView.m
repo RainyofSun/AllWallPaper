@@ -168,7 +168,7 @@ static CGFloat rubberBandDistance(CGFloat offset, CGFloat dimension) {
 
 #pragma mark - UIDynamicAnimatorDelegate
 - (void)dynamicAnimatorDidPause:(UIDynamicAnimator *)animator {
-//    [self.articleView.listTableView customSliderBarDisAlphaAnimation];
+
 }
 
 #pragma mark - UITableViewDelegate & UITableViewDataSource
@@ -181,7 +181,7 @@ static CGFloat rubberBandDistance(CGFloat offset, CGFloat dimension) {
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return indexPath.section == 0 ? 60 : ScreenHeight;
+    return indexPath.section == 0 ? 60 : CGRectGetHeight(self.bounds);
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -190,7 +190,9 @@ static CGFloat rubberBandDistance(CGFloat offset, CGFloat dimension) {
         [cell loadFenLeiTableViewCellSource:self.fenLeiSource];
         return cell;
     } else {
+        // TODO cell 高度不对
         AWDynamicDiscoverTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:DynamicDiscoverCell];
+        [cell setupDiscoverView:CGRectGetHeight(self.bounds)];
         return cell;
     }
     return nil;
@@ -204,20 +206,6 @@ static CGFloat rubberBandDistance(CGFloat offset, CGFloat dimension) {
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return 40;
-}
-
-#pragma mark - UIScrollViewDelegate
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    if (scrollView != self.dynamicTableView) {
-        return;
-    }
-    // 当前偏移量
-    CGFloat yOffset = scrollView.contentOffset.y;
-    // 临界点偏移量
-    CGFloat criticalOffset = self.loopView.loopH + 40 * 2 + 60;
-    self.canScroll = (yOffset >= criticalOffset);
-    self.dynamicTableView.scrollEnabled = !self.canScroll;
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"goTop" object:[NSNumber numberWithBool:self.canScroll]];
 }
 
 #pragma mark - private methods
@@ -252,59 +240,62 @@ static CGFloat rubberBandDistance(CGFloat offset, CGFloat dimension) {
 
 //控制上下滚动的方法
 - (void)controlScrollForVertical:(CGFloat)detal AndState:(UIGestureRecognizerState)state {
-    /*
+    NSIndexPath *index = [NSIndexPath indexPathForRow:0 inSection:1];
+    AWDynamicDiscoverTableViewCell *cell = [self.dynamicTableView cellForRowAtIndexPath:index];
+    UICollectionView *currentView = [cell currentDiscoverScrollView];
+    CGFloat criticalOffset = self.loopView.loopH + 40 * 2 + 60;
     // 判断是MainScrollView滚动还是子ScrollView滚动,detal为手指移动的距离
-    if (self.dynamicTableView.contentOffset.y >= self.loopView.loopH) {
-        [self.articleView.listTableView customSliderBarShowAlphaAnimation];
-        CGFloat offsetY = self.articleView.listTableView.contentOffset.y - detal;
+    if (self.dynamicTableView.contentOffset.y >= criticalOffset) {
+        CGFloat offsetY = currentView.contentOffset.y - detal;
         if (offsetY < 0) {
-            // 当子ScrollView的contentOffSet小于0之后就b不再移动子ScrollView,而要移动mainScrollView
+            // 当子ScrollView的contentOffSet小于0之后就不再移动子ScrollView,而要移动mainScrollView
             offsetY = 0;
-            self.mainScrollView.contentOffset = CGPointMake(0, self.mainScrollView.contentOffset.y - detal);
-        } else if (offsetY > (self.articleView.listTableView.contentSize.height - self.articleView.listTableView.frame.size.height)) {
+            self.dynamicTableView.contentOffset = CGPointMake(0, self.dynamicTableView.contentOffset.y - detal);
+        } else if (offsetY > (currentView.contentSize.height - currentView.frame.size.height)) {
             // 当子ScrollView的contenOffset大于tableView的可移动距离时
-            offsetY = self.articleView.listTableView.contentOffset.y - rubberBandDistance(detal, CGRectGetHeight(self.bounds));
+            offsetY = currentView.contentOffset.y - rubberBandDistance(detal, CGRectGetHeight(self.bounds));
         }
         NSLog(@"subTableView %f",offsetY);
-        self.articleView.listTableView.contentOffset = CGPointMake(0, offsetY);
+        currentView.contentOffset = CGPointMake(0, offsetY);
     } else {
-        CGFloat mainOffsetY = self.mainScrollView.contentOffset.y - detal;
+        CGFloat mainOffsetY = self.dynamicTableView.contentOffset.y - detal;
         if (mainOffsetY < 0) {
             // 滚动到顶部之后继续往上滚动需要乘以一个小于1的系数
-            mainOffsetY = self.mainScrollView.contentOffset.y - rubberBandDistance(detal, CGRectGetHeight(self.bounds));
-            CGFloat subScrollViewOffsetY = self.articleView.listTableView.contentOffset.y - detal;
+            mainOffsetY = self.dynamicTableView.contentOffset.y - rubberBandDistance(detal, CGRectGetHeight(self.bounds));
+            CGFloat subScrollViewOffsetY = currentView.contentOffset.y - detal;
             if (subScrollViewOffsetY < 0) {
                 // 触发子Scrollview下拉刷新
                 mainOffsetY = 0;
-                subScrollViewOffsetY = self.articleView.listTableView.contentOffset.y - rubberBandDistance(detal, CGRectGetHeight(self.bounds));
-                self.articleView.listTableView.contentOffset = CGPointMake(0, subScrollViewOffsetY);
+                subScrollViewOffsetY = currentView.contentOffset.y - rubberBandDistance(detal, CGRectGetHeight(self.bounds));
+                currentView.contentOffset = CGPointMake(0, subScrollViewOffsetY);
                 if (subScrollViewOffsetY <= -30) {
-                    [self.articleView manualTriggerArticleRefresh];
+                    // 下拉刷新
+//                    [self.articleView manualTriggerArticleRefresh];
                 }
             }
             NSLog(@"sub %f",subScrollViewOffsetY);
-        } else if (mainOffsetY > self.loopView.loopH) {
-            mainOffsetY = self.loopView.loopH;
+        } else if (mainOffsetY > criticalOffset) {
+            mainOffsetY = criticalOffset;
         }
         NSLog(@"MainScrollView %f",mainOffsetY);
-        self.mainScrollView.contentOffset = CGPointMake(0, mainOffsetY);
+        self.dynamicTableView.contentOffset = CGPointMake(0, mainOffsetY);
     }
     
     BOOL outsideFrame = [self outsideFrame];
     if (outsideFrame && (self.decelerationBehavior && !self.springBehavior)) {
         CGPoint target = CGPointZero;
         BOOL isMain = NO;
-        if (self.mainScrollView.contentOffset.y < 0) {
-            self.dynamicItem.center = self.mainScrollView.contentOffset;
+        if (self.dynamicTableView.contentOffset.y < 0) {
+            self.dynamicItem.center = self.dynamicTableView.contentOffset;
             target = CGPointZero;
             isMain = YES;
-        } else if (self.articleView.listTableView.contentOffset.y > (self.articleView.listTableView.contentSize.height - self.articleView.listTableView.frame.size.height)) {
-            self.dynamicItem.center = self.articleView.listTableView.contentOffset;
-            target.x = self.articleView.listTableView.contentOffset.x;
-            target.y = self.articleView.listTableView.contentSize.height > self.articleView.listTableView.frame.size.height ? self.articleView.listTableView.contentSize.height - self.articleView.listTableView.frame.size.height : 0;
+        } else if (currentView.contentOffset.y > (currentView.contentSize.height - currentView.frame.size.height)) {
+            self.dynamicItem.center = currentView.contentOffset;
+            target.x = currentView.contentOffset.x;
+            target.y = currentView.contentSize.height > currentView.frame.size.height ? currentView.contentSize.height - currentView.frame.size.height : 0;
             isMain = NO;
-        } else if (self.articleView.listTableView.contentOffset.y < 0) {
-            self.dynamicItem.center = self.articleView.listTableView.contentOffset;
+        } else if (currentView.contentOffset.y < 0) {
+            self.dynamicItem.center = currentView.contentOffset;
             target = CGPointZero;
             isMain = NO;
         }
@@ -316,48 +307,48 @@ static CGFloat rubberBandDistance(CGFloat offset, CGFloat dimension) {
         springBehavior.frequency = 2;
         springBehavior.action = ^{
             if (isMain) {
-                weakSelf.mainScrollView.contentOffset = weakSelf.dynamicItem.center;
-                if (weakSelf.mainScrollView.contentOffset.y == 0) {
-                    weakSelf.articleView.listTableView.contentOffset = CGPointZero;
+                weakSelf.dynamicTableView.contentOffset = weakSelf.dynamicItem.center;
+                if (weakSelf.dynamicTableView.contentOffset.y == 0) {
+                    currentView.contentOffset = CGPointZero;
                 }
             } else {
-                weakSelf.articleView.listTableView.contentOffset = weakSelf.dynamicItem.center;
-                if (weakSelf.articleView.listTableView.mj_footer.refreshing) {
-                    weakSelf.articleView.listTableView.contentOffset = CGPointMake(weakSelf.articleView.listTableView.contentOffset.x, weakSelf.articleView.listTableView.contentOffset.y + 44);
-                } else if (weakSelf.articleView.listTableView.mj_header.refreshing) {
-                    weakSelf.articleView.listTableView.contentOffset = CGPointMake(weakSelf.articleView.listTableView.contentOffset.x, weakSelf.articleView.listTableView.contentOffset.y + 44);
+                currentView.contentOffset = weakSelf.dynamicItem.center;
+                if (currentView.mj_footer.refreshing) {
+                    currentView.contentOffset = CGPointMake(currentView.contentOffset.x, currentView.contentOffset.y + 44);
+                } else if (currentView.mj_header.refreshing) {
+                    currentView.contentOffset = CGPointMake(currentView.contentOffset.x, currentView.contentOffset.y + 44);
                 }
             }
         };
         [self.animator addBehavior:springBehavior];
         self.springBehavior = springBehavior;
     }
-     */
 }
 
 // 判断是否超出ViewFrame的边界
 - (BOOL)outsideFrame {
-    /*
-    if (self.mainScrollView.contentOffset.y < 0) {
+    if (self.dynamicTableView.contentOffset.y < 0) {
         return YES;
     }
-    if (self.articleView.listTableView.contentOffset.y < 0) {
+    NSIndexPath *index = [NSIndexPath indexPathForRow:0 inSection:1];
+    AWDynamicDiscoverTableViewCell *cell = [self.dynamicTableView cellForRowAtIndexPath:index];
+    UICollectionView *currentView = [cell currentDiscoverScrollView];
+    if (currentView.contentOffset.y < 0) {
         return YES;
     }
-    if (self.articleView.listTableView.contentSize.height > self.articleView.listTableView.frame.size.height) {
-        if (self.articleView.listTableView.contentOffset.y > (self.articleView.listTableView.contentSize.height - self.articleView.listTableView.frame.size.height)) {
+    if (currentView.contentSize.height > currentView.frame.size.height) {
+        if (currentView.contentOffset.y > (currentView.contentSize.height - currentView.frame.size.height)) {
             return YES;
         } else {
             return NO;
         }
     } else {
-        if (self.articleView.listTableView.contentOffset.y > 0) {
+        if (currentView.contentOffset.y > 0) {
             return YES;
         } else {
             return NO;
         }
     }
-     */
     return NO;
 }
 

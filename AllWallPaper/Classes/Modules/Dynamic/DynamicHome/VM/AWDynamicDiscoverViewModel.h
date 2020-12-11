@@ -12,7 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AWDynamicDiscoverViewModel : AWBaseViewModel
 
-- (void)setupDiscoverView:(UIView *)view;
+- (void)setupDiscoverView:(UIView *)view discoverViewH:(CGFloat)viewH;
+- (UICollectionView *)getCurrentDiscoverCollection;
 
 @end
 

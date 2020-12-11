@@ -18,23 +18,19 @@
 
 @implementation AWDynamicDiscoverTableViewCell
 
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
-    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.selectionStyle = UITableViewCellSelectionStyleNone;
-        [self setupDiscoverView];
-    }
-    return self;
-}
-
 - (void)dealloc {
     NSLog(@"DELLOC %@",NSStringFromClass(self.class));
 }
 
 #pragma mark - public methods
+- (UICollectionView *)currentDiscoverScrollView {
+    return [self.discoverVM getCurrentDiscoverCollection];
+}
 
-#pragma mark - private methods
-- (void)setupDiscoverView {
-    [self.discoverVM setupDiscoverView:self.contentView];
+- (void)setupDiscoverView:(CGFloat)cellH {
+    if (!_discoverVM) {
+        [self.discoverVM setupDiscoverView:self.contentView discoverViewH:cellH];
+    }
 }
 
 #pragma mark - lazy

@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AWDynamicDiscoverTableViewCell : UITableViewCell
 
+- (void)setupDiscoverView:(CGFloat)cellH;
+- (UICollectionView *)currentDiscoverScrollView;
+
 @end
 
 NS_ASSUME_NONNULL_END

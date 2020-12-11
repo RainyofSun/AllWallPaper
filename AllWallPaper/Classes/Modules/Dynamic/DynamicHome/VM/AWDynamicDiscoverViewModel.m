@@ -27,6 +27,8 @@
 @property (nonatomic,strong) NSMutableDictionary *recordLoadPage;
 /** localSource */
 @property (nonatomic,strong) NSMutableArray <AWDiscoverCellModel *>*localSource;
+/** collectionH */
+@property (nonatomic,assign) CGFloat collectionH;
 
 @end
 
@@ -50,7 +52,8 @@
 }
 
 #pragma mark - public methods
-- (void)setupDiscoverView:(UIView *)view {
+- (void)setupDiscoverView:(UIView *)view discoverViewH:(CGFloat)viewH {
+    self.collectionH = viewH;
     self.discoverView.discoverDelegate = self;
     [view addSubview:self.discoverView];
     [self.discoverView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero];
@@ -58,6 +61,11 @@
     AWDiscoverCollectionView *firstView = [self createSubView:self.selectedIndex];
     [self.discoverView addFirstDiscoverView:firstView];
     [firstView wallPaperStartRefresh];
+}
+
+- (UICollectionView *)getCurrentDiscoverCollection {
+    AWDiscoverCollectionView *tempCollectionView = (AWDiscoverCollectionView *)[self.paperViewDict objectForKey:[NSString stringWithFormat:@"%ld",(long)self.selectedIndex]];
+    return [tempCollectionView currentDiscoverCollectionView];
 }
 
 #pragma mark - AWDynamicDiscoverDelegate
@@ -124,7 +132,7 @@
 }
 
 - (AWDiscoverCollectionView *)createSubView:(NSInteger)index {
-    AWDiscoverCollectionView *discoverView = [[AWDiscoverCollectionView alloc] initWithFrame:CGRectMake(index * ScreenWidth, 0, ScreenWidth, ScreenHeight)];
+    AWDiscoverCollectionView *discoverView = [[AWDiscoverCollectionView alloc] initWithFrame:CGRectMake(index * ScreenWidth, 0, ScreenWidth, self.collectionH)];
     discoverView.wallPaperDelegate = self;
     [self.paperViewDict setValue:discoverView forKey:[NSString stringWithFormat:@"%ld",(long)index]];
     return discoverView;

@@ -11,7 +11,7 @@
 
 static NSString *WallPaperCell = @"WallPaperCell";
 
-@interface AWDiscoverCollectionView ()<UICollectionViewDelegateFlowLayout,UICollectionViewDataSource,UIScrollViewDelegate>
+@interface AWDiscoverCollectionView ()<UICollectionViewDelegateFlowLayout,UICollectionViewDataSource>
 
 /** discoverCollectionView */
 @property (nonatomic,strong) UICollectionView *discoverCollectionView;
@@ -68,6 +68,10 @@ static NSString *WallPaperCell = @"WallPaperCell";
     [self refreshMoreData];
 }
 
+- (UICollectionView *)currentDiscoverCollectionView {
+    return self.discoverCollectionView;
+}
+
 #pragma mark - 加载更多
 - (void)refreshMoreData {
     NSLog(@"刷新");
@@ -98,13 +102,6 @@ static NSString *WallPaperCell = @"WallPaperCell";
     if (self.wallPaperDelegate != nil && [self.wallPaperDelegate respondsToSelector:@selector(didSelectedWallPaper:)]) {
         [self.wallPaperDelegate didSelectedWallPaper:self.dataSource[indexPath.item]];
     }
-}
-
-#pragma mark - UIScrollViewDelegate
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    self.canScroll = (scrollView.contentOffset.y == 0);
-    self.discoverCollectionView.scrollEnabled = !self.canScroll;
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"subGetTop" object:[NSNumber numberWithBool:self.canScroll]];
 }
 
 #pragma mark - private methods
