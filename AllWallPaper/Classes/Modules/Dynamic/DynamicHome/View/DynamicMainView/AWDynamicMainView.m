@@ -208,6 +208,10 @@ static CGFloat rubberBandDistance(CGFloat offset, CGFloat dimension) {
     return 40;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 0.0001;
+}
+
 #pragma mark - private methods
 - (void)setDefaultStatus {
     self.canScroll = YES;
@@ -255,7 +259,7 @@ static CGFloat rubberBandDistance(CGFloat offset, CGFloat dimension) {
             // 当子ScrollView的contenOffset大于tableView的可移动距离时
             offsetY = currentView.contentOffset.y - rubberBandDistance(detal, CGRectGetHeight(self.bounds));
         }
-        NSLog(@"subTableView %f",offsetY);
+//        NSLog(@"subTableView %f",offsetY);
         currentView.contentOffset = CGPointMake(0, offsetY);
     } else {
         CGFloat mainOffsetY = self.dynamicTableView.contentOffset.y - detal;
@@ -270,14 +274,14 @@ static CGFloat rubberBandDistance(CGFloat offset, CGFloat dimension) {
                 currentView.contentOffset = CGPointMake(0, subScrollViewOffsetY);
                 if (subScrollViewOffsetY <= -30) {
                     // 下拉刷新
-//                    [self.articleView manualTriggerArticleRefresh];
+//                    [FLModuleMsgSend sendCumtomMethodMsg:currentView.superview methodName:@selector(manualTriggerArticleRefresh)];
                 }
             }
-            NSLog(@"sub %f",subScrollViewOffsetY);
+//            NSLog(@"sub %f",subScrollViewOffsetY);
         } else if (mainOffsetY > criticalOffset) {
             mainOffsetY = criticalOffset;
         }
-        NSLog(@"MainScrollView %f",mainOffsetY);
+//        NSLog(@"MainScrollView %f",mainOffsetY);
         self.dynamicTableView.contentOffset = CGPointMake(0, mainOffsetY);
     }
     

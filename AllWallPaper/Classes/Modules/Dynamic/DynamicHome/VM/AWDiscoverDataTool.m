@@ -67,8 +67,12 @@
 
 - (void)resetDefaultPage {
     self.page = 0;
-    [self.localSource removeAllObjects];
     self.isResetNoMoreData = NO;
+    [self removeLocalCache];
+}
+
+- (void)removeLocalCache {
+    [self.localSource removeAllObjects];
 }
 
 #pragma mark - private methods

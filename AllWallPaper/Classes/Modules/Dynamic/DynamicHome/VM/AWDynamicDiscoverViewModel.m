@@ -29,6 +29,8 @@
 @property (nonatomic,strong) NSMutableArray <AWDiscoverCellModel *>*localSource;
 /** collectionH */
 @property (nonatomic,assign) CGFloat collectionH;
+/** getDataInCache */
+@property (nonatomic,assign) BOOL getDataInCache;
 
 @end
 
@@ -71,11 +73,11 @@
 #pragma mark - AWDynamicDiscoverDelegate
 - (UIView *)addNewDiscoverView:(NSInteger)scrollIndex {
     // 页面滑动删除数据源，防止数据混乱
+    self.getDataInCache = NO;
     [self.localSource removeAllObjects];
     self.selectedIndex = scrollIndex;
     AWDiscoverCollectionView *discoverView = [self createSubView:scrollIndex];
     [discoverView wallPaperStartRefresh];
-    [self.dataTool resetDefaultPage];
     FLOG(@"切换到新创建的");
     return discoverView;
 }
@@ -86,10 +88,13 @@
     self.selectedIndex = scrollIndex;
     NSArray <AWDiscoverCellModel *>* cacheSource = [self.totalSource objectForKey:[NSString stringWithFormat:@"%ld",(long)self.selectedIndex]];
     if (cacheSource.count) {
+        self.getDataInCache = YES;
         // 滑动至已创建的页面,从缓存中取出数据和已加载的页数
         [self.localSource addObjectsFromArray:cacheSource];
         NSDictionary *tempDict = (NSDictionary *)[self.recordLoadPage objectForKey:[NSString stringWithFormat:@"%ld",(long)self.selectedIndex]];
+        [self.dataTool removeLocalCache];
         self.dataTool.page = [[tempDict objectForKey:@"page"] integerValue];
+        self.dataTool.isResetNoMoreData = [[tempDict objectForKey:@"isNoMore"] boolValue];
         AWDiscoverCollectionView *tempView = (AWDiscoverCollectionView *)[self.paperViewDict valueForKey:[NSString stringWithFormat:@"%ld",(long)self.selectedIndex]];
         ![[tempDict objectForKey:@"isNoMore"] boolValue] ? [tempView resetFooterStatus:MJRefreshStateIdle] : nil;
         [tempView resetWallPaperSource:self.localSource];
@@ -113,12 +118,13 @@
 #pragma mark - private methods
 - (void)setDefaultData {
     self.selectedIndex = 0;
+    self.getDataInCache = NO;
 }
 
 - (void)requestLocalData:(AWLoadingType)loadType {
     WeakSelf;
     [self.dataTool requestLocalPaperData:self.selectedIndex dataBlock:^(id  _Nonnull responseObject, BOOL isNoMoreData) {
-        [weakSelf.localSource removeAllObjects];
+        !weakSelf.getDataInCache ? [weakSelf.localSource removeAllObjects] : nil;
         [weakSelf.localSource addObjectsFromArray:(NSArray <AWDiscoverCellModel *>*)responseObject];
         // 数据更新时，同时更新数据缓存中的数据和已加载的页数
         [weakSelf.totalSource setValue:[weakSelf.localSource copy] forKey:[NSString stringWithFormat:@"%ld",(long)weakSelf.selectedIndex]];
@@ -132,7 +138,8 @@
 }
 
 - (AWDiscoverCollectionView *)createSubView:(NSInteger)index {
-    AWDiscoverCollectionView *discoverView = [[AWDiscoverCollectionView alloc] initWithFrame:CGRectMake(index * ScreenWidth, 0, ScreenWidth, self.collectionH)];
+    CGRect discoverFrame = CGRectMake(index * ScreenWidth, 0, ScreenWidth, (self.collectionH - [self.discoverView discoverTopbarHight]));
+    AWDiscoverCollectionView *discoverView = [[AWDiscoverCollectionView alloc] initNeedAddRefreshHeader:NO discoverCollectionFrame:discoverFrame];
     discoverView.wallPaperDelegate = self;
     [self.paperViewDict setValue:discoverView forKey:[NSString stringWithFormat:@"%ld",(long)index]];
     return discoverView;

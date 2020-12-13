@@ -514,12 +514,12 @@
 		134519B4257DE1740031F004 /* MsgSend */ = {
 			isa = PBXGroup;
 			children = (
-				134519B5257DE1740031F004 /* RuntimeTool.m */,
 				134519B6257DE1740031F004 /* EGLSBackupMessage.h */,
-				134519B7257DE1740031F004 /* FLModuleMsgSend.m */,
-				134519B8257DE1740031F004 /* RuntimeTool.h */,
 				134519B9257DE1740031F004 /* EGLSBackupMessage.m */,
 				134519BA257DE1740031F004 /* FLModuleMsgSend.h */,
+				134519B7257DE1740031F004 /* FLModuleMsgSend.m */,
+				134519B8257DE1740031F004 /* RuntimeTool.h */,
+				134519B5257DE1740031F004 /* RuntimeTool.m */,
 			);
 			path = MsgSend;
 			sourceTree = "<group>";

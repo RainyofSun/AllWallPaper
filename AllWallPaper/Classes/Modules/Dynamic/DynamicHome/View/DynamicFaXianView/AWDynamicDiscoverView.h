@@ -25,6 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)loadTopSliderTitles:(NSArray <NSString *>*)titleSource;
 - (void)addFirstDiscoverView:(UIView *)discoverView;
+- (CGFloat)discoverTopbarHight;
 
 @end
 

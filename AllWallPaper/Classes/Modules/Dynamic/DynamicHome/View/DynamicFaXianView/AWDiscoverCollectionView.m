@@ -17,17 +17,17 @@ static NSString *WallPaperCell = @"WallPaperCell";
 @property (nonatomic,strong) UICollectionView *discoverCollectionView;
 /** dataSource */
 @property (nonatomic,strong) NSArray <AWDiscoverCellModel *>*dataSource;
-/** canScroll */
-@property (nonatomic,assign) BOOL canScroll;
+/** needHiddenRefreshHeader */
+@property (nonatomic,assign) BOOL needAddRefreshHeader;
 
 @end
 
 @implementation AWDiscoverCollectionView
 
-- (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
+- (instancetype)initNeedAddRefreshHeader:(BOOL)hiddenHeader discoverCollectionFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
         [self setDefaultStatus];
+        self.needAddRefreshHeader = hiddenHeader;
         [self setupCollectionView];
     }
     return self;
@@ -65,7 +65,7 @@ static NSString *WallPaperCell = @"WallPaperCell";
 }
 
 - (void)wallPaperStartRefresh {
-    [self refreshMoreData];
+    self.needAddRefreshHeader ? [self.discoverCollectionView.mj_header beginRefreshing] : [self refreshMoreData];
 }
 
 - (UICollectionView *)currentDiscoverCollectionView {
@@ -106,7 +106,7 @@ static NSString *WallPaperCell = @"WallPaperCell";
 
 #pragma mark - private methods
 - (void)setDefaultStatus {
-    self.canScroll = NO;
+    self.needAddRefreshHeader = NO;
 }
 
 - (void)setupCollectionView {
@@ -122,13 +122,17 @@ static NSString *WallPaperCell = @"WallPaperCell";
     [self.discoverCollectionView registerNib:[UINib nibWithNibName:@"AWDiscoverCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:WallPaperCell];
     self.discoverCollectionView.dataSource = self;
     self.discoverCollectionView.delegate = self;
-    self.discoverCollectionView.scrollEnabled = self.canScroll;
+    self.discoverCollectionView.scrollEnabled = NO;
     self.discoverCollectionView.bounces = NO;
     [self addSubview:self.discoverCollectionView];
     [self setRefreshHeaderFooter];
 }
 
 - (void)setRefreshHeaderFooter {
+    if (self.needAddRefreshHeader) {
+        FWRefreshHeader *header = [FWRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshMoreData)];
+        self.discoverCollectionView.mj_header = header;
+    }
     FWRefreshFooter *footer = [FWRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
     self.discoverCollectionView.mj_footer = footer;
 }

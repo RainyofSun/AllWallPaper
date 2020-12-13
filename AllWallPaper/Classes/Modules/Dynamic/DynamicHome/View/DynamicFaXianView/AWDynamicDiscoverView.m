@@ -51,6 +51,10 @@
     [self.viewSource addObject:@(0)];
 }
 
+- (CGFloat)discoverTopbarHight {
+    return self.topBar.mj_h;
+}
+
 #pragma mark - 消息透传
 - (void)switchTopSliderBarItem:(NSNumber *)senderTag {
     if ([self.viewSource containsObject:senderTag]) {

@@ -28,6 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 /** wallPaperDelegate */
 @property (nonatomic,weak) id<AWDiscoverViewDelegate> wallPaperDelegate;
 
+- (instancetype)initNeedAddRefreshHeader:(BOOL)hiddenHeader discoverCollectionFrame:(CGRect)frame;
 - (void)loadWallPaperSource:(NSArray <AWDiscoverCellModel *>*)papaerSource;
 - (void)resetWallPaperSource:(NSArray <AWDiscoverCellModel *>*)paperSource;
 - (void)resetFooterStatus:(MJRefreshState)status;

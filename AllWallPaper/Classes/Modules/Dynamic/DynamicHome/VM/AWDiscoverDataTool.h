@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSArray <NSString *>*)discoverTopSliderBarTitle;
 - (void)requestLocalPaperData:(NSInteger)dataNameIndex dataBlock:(void(^)(id responseObject,BOOL isNoMoreData))valueBlock loadingDataType:(AWLoadingType)loadType;
 - (void)resetDefaultPage;
+- (void)removeLocalCache;
 
 @end
 
