@@ -1304,10 +1304,7 @@
 		13451A1C257DF76C0031F004 /* HeadPortrait */ = {
 			isa = PBXGroup;
 			children = (
-				13451A1D257DF76C0031F004 /* VM */,
-				13451A1E257DF76C0031F004 /* VC */,
-				13451A1F257DF76C0031F004 /* Model */,
-				13451A20257DF76C0031F004 /* View */,
+				C810F2DB2587B26500A6CD4A /* HeadPortraitHome */,
 			);
 			path = HeadPortrait;
 			sourceTree = "<group>";
@@ -2318,6 +2315,17 @@
 				7AC8E82A204E4D322AE40E74 /* Pods_AllWallPaper.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C810F2DB2587B26500A6CD4A /* HeadPortraitHome */ = {
+			isa = PBXGroup;
+			children = (
+				13451A1D257DF76C0031F004 /* VM */,
+				13451A1E257DF76C0031F004 /* VC */,
+				13451A1F257DF76C0031F004 /* Model */,
+				13451A20257DF76C0031F004 /* View */,
+			);
+			path = HeadPortraitHome;
 			sourceTree = "<group>";
 		};
 		E8DEDF25798EBF040ABE963A /* Pods */ = {

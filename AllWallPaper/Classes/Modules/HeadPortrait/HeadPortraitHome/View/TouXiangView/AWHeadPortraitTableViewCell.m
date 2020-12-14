@@ -34,11 +34,9 @@
 
 - (void)loadHeadPortraitCellModel:(NSArray<AWHeadGroupModel *> *)modelSource typeName:(NSString *)name {
     self.typeLab.text = name;
-    [self.leftImgBtn loadNetworkImg:modelSource.firstObject.imageUrlSmall bigPlaceHolder:NO];
-    [self.rightImgBtn loadNetworkImg:modelSource.lastObject.imageUrlSmall bigPlaceHolder:NO];
-    self.leftImgBtn.imageView.contentMode = self.rightImgBtn.imageView.contentMode = UIViewContentModeScaleAspectFill;
-    self.leftImgBtn.contentHorizontalAlignment = self.rightImgBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentFill;
-    self.leftImgBtn.contentVerticalAlignment = self.leftImgBtn.contentVerticalAlignment = UIControlContentHorizontalAlignmentFill;
+    [self.leftImgBtn loadBackgroudNetworkImg:modelSource.firstObject.imageUrlSmall bigPlaceHolder:NO];
+    [self.rightImgBtn loadBackgroudNetworkImg:modelSource.lastObject.imageUrlSmall bigPlaceHolder:NO];
+//    self.leftImgBtn.contentMode = self.rightImgBtn.contentMode = UIViewContentModeScaleAspectFill;
     self.cellSource = modelSource;
 }
 

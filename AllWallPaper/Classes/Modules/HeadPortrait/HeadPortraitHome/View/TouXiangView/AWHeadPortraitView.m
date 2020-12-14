@@ -42,7 +42,8 @@ static NSString *HeadPortraitCell = @"HeadPortraitCell";
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 200;
+    CGFloat H = (ScreenWidth - 24)/2/74*75 + 40;
+    return H;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
