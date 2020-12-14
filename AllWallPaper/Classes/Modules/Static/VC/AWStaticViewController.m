@@ -7,8 +7,12 @@
 //
 
 #import "AWStaticViewController.h"
+#import "AWStaticViewModel.h"
 
 @interface AWStaticViewController ()
+
+/** staticVM */
+@property (nonatomic,strong) AWStaticViewModel *staticVM;
 
 @end
 
@@ -17,6 +21,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self.staticVM loadStaticView:self];
+}
+
+#pragma mark - lazy
+- (AWStaticViewModel *)staticVM {
+    if (!_staticVM) {
+        _staticVM = [[AWStaticViewModel alloc] init];
+    }
+    return _staticVM;
 }
 
 /*

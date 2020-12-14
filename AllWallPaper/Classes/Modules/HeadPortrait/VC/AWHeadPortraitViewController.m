@@ -7,8 +7,12 @@
 //
 
 #import "AWHeadPortraitViewController.h"
+#import "AWHeadPortraitViewModel.h"
 
 @interface AWHeadPortraitViewController ()
+
+/** headPortraitVM */
+@property (nonatomic,strong) AWHeadPortraitViewModel *headPortraitVM;
 
 @end
 
@@ -17,6 +21,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self.headPortraitVM loadHeadPortraitControl:self];
+}
+
+#pragma mark - lazy
+- (AWHeadPortraitViewModel *)headPortraitVM {
+    if (!_headPortraitVM) {
+        _headPortraitVM = [[AWHeadPortraitViewModel alloc] init];
+    }
+    return _headPortraitVM;
 }
 
 /*

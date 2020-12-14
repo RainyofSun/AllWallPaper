@@ -39,17 +39,21 @@
 }
 
 - (void)requestLocalPaperData:(NSInteger)dataNameIndex dataBlock:(void (^)(id _Nonnull, BOOL))valueBlock loadingDataType:(AWLoadingType)loadType {
+    [self requestLocalPaperDataName:self.fileNameArray[dataNameIndex] dataBlock:valueBlock loadingDataType:loadType];
+}
+
+- (void)requestLocalPaperDataName:(NSString *)dataName dataBlock:(void (^)(id _Nonnull, BOOL))valueBlock loadingDataType:(AWLoadingType)loadType {
     NSInteger tempPage = 0;
     if (loadType == AWLoadingType_More) {
         tempPage = self.page + 1;
     } else {
         [self resetDefaultPage];
     }
-    FLOG(@"加载页数 %ld 记录页数 %ld 加载类目 %@",(long)tempPage,(long)self.page,self.fileNameArray[dataNameIndex]);
+    FLOG(@"加载页数 %ld 记录页数 %ld 加载类目 %@",(long)tempPage,(long)self.page,dataName);
     self.loadingType = loadType;
     __block NSArray <AWDiscoverCellModel *>* tempArray = nil;
     WeakSelf;
-    [MPLocalData MPGetLocalDataFileName:[NSString stringWithFormat:@"%@%ld",self.fileNameArray[dataNameIndex],tempPage] localData:^(id  _Nonnull responseObject) {
+    [MPLocalData MPGetLocalDataFileName:[NSString stringWithFormat:@"%@%ld",dataName,tempPage] localData:^(id  _Nonnull responseObject) {
         AWDiscoverModel *pageModel = [AWDiscoverModel modelWithDictionary:(NSDictionary *)responseObject];
         tempArray = pageModel.list;
         weakSelf.loadingType == AWLoadingType_More ? weakSelf.page ++ : [weakSelf.localSource removeAllObjects];

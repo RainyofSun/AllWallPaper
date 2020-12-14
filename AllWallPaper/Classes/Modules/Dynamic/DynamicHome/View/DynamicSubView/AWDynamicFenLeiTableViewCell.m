@@ -46,7 +46,7 @@
 
 #pragma mark - Target
 - (void)selectedFenLei:(UIButton *)sender {
-    NSLog(@"tag : %ld",(long)sender.tag);
+    [[self nearsetViewController].navigationController pushViewController:[FLModuleMsgSend sendMsg:@{@"title":sender.currentTitle,@"index":[NSNumber numberWithInteger:(sender.tag - 100)]} vcName:@"AWFenLeiDetailViewController"] animated:YES];
 }
 
 #pragma mark - UIScrollViewDelegate

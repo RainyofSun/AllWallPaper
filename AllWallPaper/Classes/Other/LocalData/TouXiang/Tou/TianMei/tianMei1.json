@@ -1,0 +1,42 @@
+{
+    "code": 0,
+    "msg": null,
+    "url": null,
+    "data": {
+        "totalSize": 17,
+        "totalPageCount": 2,
+        "pageIndex": 2,
+        "pageSize": 12,
+        "list": [{
+            "relationId": "060b9d7c-31ce-4210-91e4-70d48d07d77f",
+            "imageUrl": "http://imgg.ddn.duodutek.com/wallpaper/060b9d7c-31ce-4210-91e4-70d48d07d77f.jpg",
+            "imageUrlSmall": "http://imgg.ddn.duodutek.com/wallpaper/0f65bb1c-5606-4189-809c-be9bb818adfe.jpg",
+            "haveUp": false,
+            "upCount": 4305
+        }, {
+            "relationId": "83fa336b-ef29-4bf4-8117-7d417695b2f0",
+            "imageUrl": "http://imgg.ddn.duodutek.com/wallpaper/83fa336b-ef29-4bf4-8117-7d417695b2f0.jpg",
+            "imageUrlSmall": "http://imgg.ddn.duodutek.com/wallpaper/06fa38d9-4b9d-4e30-9773-727600a53116.jpg",
+            "haveUp": false,
+            "upCount": 10315
+        }, {
+            "relationId": "b32d7015-a270-4347-a077-d52878c037df",
+            "imageUrl": "http://imgg.ddn.duodutek.com/wallpaper/b32d7015-a270-4347-a077-d52878c037df.jpg",
+            "imageUrlSmall": "http://imgg.ddn.duodutek.com/wallpaper/ac5f2d2d-6ff3-490c-a7d5-5f43877624d1.jpg",
+            "haveUp": false,
+            "upCount": 27238
+        }, {
+            "relationId": "a6eecaa7-997e-49b6-8983-e83f1df4db71",
+            "imageUrl": "http://imgg.ddn.duodutek.com/wallpaper/a6eecaa7-997e-49b6-8983-e83f1df4db71.jpg",
+            "imageUrlSmall": "http://imgg.ddn.duodutek.com/wallpaper/f6e8d01b-8919-40b7-afae-c4effc139376.jpg",
+            "haveUp": false,
+            "upCount": 13019
+        }, {
+            "relationId": "2f970b99-a21e-4664-85df-b0b61ad5a3ef",
+            "imageUrl": "http://imgg.ddn.duodutek.com/wallpaper/2f970b99-a21e-4664-85df-b0b61ad5a3ef.jpg",
+            "imageUrlSmall": "http://imgg.ddn.duodutek.com/wallpaper/bc608afd-c49f-4acb-9ddb-d43c2019ef35.jpg",
+            "haveUp": false,
+            "upCount": 22368
+        }]
+    }
+}

@@ -74,14 +74,14 @@ static NSString *WallPaperCell = @"WallPaperCell";
 
 #pragma mark - 加载更多
 - (void)refreshMoreData {
-    NSLog(@"刷新");
+    FLOG(@"刷新");
     if (self.wallPaperDelegate != nil && [self.wallPaperDelegate respondsToSelector:@selector(pullRefreshPage)]) {
         [self.wallPaperDelegate pullRefreshPage];
     }
 }
 
 - (void)loadMoreData {
-    NSLog(@"加载更多");
+    FLOG(@"加载更多");
     if (self.wallPaperDelegate != nil && [self.wallPaperDelegate respondsToSelector:@selector(dragLoadMore)]) {
         [self.wallPaperDelegate dragLoadMore];
     }

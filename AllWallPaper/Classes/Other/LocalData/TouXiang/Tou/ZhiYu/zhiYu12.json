@@ -1,0 +1,54 @@
+{
+    "code": 0,
+    "msg": null,
+    "url": null,
+    "data": {
+        "totalSize": 151,
+        "totalPageCount": 13,
+        "pageIndex": 13,
+        "pageSize": 12,
+        "list": [{
+            "relationId": "357bde20-1ed2-4704-9354-d49eea86d49f",
+            "imageUrl": "http://imgg.ddn.duodutek.com/wallpaper-local/androidwallpaper/357bde20-1ed2-4704-9354-d49eea86d49f.jpg",
+            "imageUrlSmall": "http://imgg.ddn.duodutek.com/wallpaper-local/androidwallpaper/small/357bde20-1ed2-4704-9354-d49eea86d49f_-1_small.jpg",
+            "haveUp": false,
+            "upCount": 1535
+        }, {
+            "relationId": "4bed09ca-06f4-417d-952c-0869b963ced3",
+            "imageUrl": "http://imgg.ddn.duodutek.com/wallpaper-local/androidwallpaper/4bed09ca-06f4-417d-952c-0869b963ced3.jpg",
+            "imageUrlSmall": "http://imgg.ddn.duodutek.com/wallpaper-local/androidwallpaper/small/4bed09ca-06f4-417d-952c-0869b963ced3_-1_small.jpg",
+            "haveUp": false,
+            "upCount": 23847
+        }, {
+            "relationId": "4a8909a4-68b5-48d6-b0b5-eacb77f213fe",
+            "imageUrl": "http://imgg.ddn.duodutek.com/wallpaper-local/androidwallpaper/4a8909a4-68b5-48d6-b0b5-eacb77f213fe.jpg",
+            "imageUrlSmall": "http://imgg.ddn.duodutek.com/wallpaper-local/androidwallpaper/small/4a8909a4-68b5-48d6-b0b5-eacb77f213fe_-1_small.jpg",
+            "haveUp": false,
+            "upCount": 26284
+        }, {
+            "relationId": "412806ed-ced0-4574-8b8d-594a2468dfd7",
+            "imageUrl": "http://imgg.ddn.duodutek.com/wallpaper-local/androidwallpaper/412806ed-ced0-4574-8b8d-594a2468dfd7.jpg",
+            "imageUrlSmall": "http://imgg.ddn.duodutek.com/wallpaper-local/androidwallpaper/small/412806ed-ced0-4574-8b8d-594a2468dfd7_-1_small.jpg",
+            "haveUp": false,
+            "upCount": 11648
+        }, {
+            "relationId": "b0c62f7e-bf6e-4560-a9a5-b9bbdf7a1ec9",
+            "imageUrl": "http://imgg.ddn.duodutek.com/wallpaper-local/androidwallpaper/b0c62f7e-bf6e-4560-a9a5-b9bbdf7a1ec9.jpg",
+            "imageUrlSmall": "http://imgg.ddn.duodutek.com/wallpaper-local/androidwallpaper/small/b0c62f7e-bf6e-4560-a9a5-b9bbdf7a1ec9_-1_small.jpg",
+            "haveUp": false,
+            "upCount": 15258
+        }, {
+            "relationId": "854b495a-5d11-4569-a3dd-15a35cb86660",
+            "imageUrl": "http://imgg.ddn.duodutek.com/wallpaper-local/androidwallpaper/854b495a-5d11-4569-a3dd-15a35cb86660.jpg",
+            "imageUrlSmall": "http://imgg.ddn.duodutek.com/wallpaper-local/androidwallpaper/small/854b495a-5d11-4569-a3dd-15a35cb86660_-1_small.jpg",
+            "haveUp": false,
+            "upCount": 20234
+        }, {
+            "relationId": "a8257620-ee84-4a05-9fc8-ae7704c49d0a",
+            "imageUrl": "http://imgg.ddn.duodutek.com/wallpaper-local/androidwallpaper/a8257620-ee84-4a05-9fc8-ae7704c49d0a.jpg",
+            "imageUrlSmall": "http://imgg.ddn.duodutek.com/wallpaper-local/androidwallpaper/small/a8257620-ee84-4a05-9fc8-ae7704c49d0a_-1_small.jpg",
+            "haveUp": false,
+            "upCount": 8150
+        }]
+    }
+}

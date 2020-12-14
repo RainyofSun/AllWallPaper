@@ -1,0 +1,24 @@
+{
+    "code": 0,
+    "msg": null,
+    "url": null,
+    "data": {
+        "totalSize": 50,
+        "totalPageCount": 5,
+        "pageIndex": 5,
+        "pageSize": 12,
+        "list": [{
+            "relationId": "7b59a538-63dc-4ee7-be7e-63fbc348b408",
+            "imageUrl": "http://imgg.ddn.duodutek.com/wallpaper/7b59a538-63dc-4ee7-be7e-63fbc348b408.jpg",
+            "imageUrlSmall": "http://imgg.ddn.duodutek.com/wallpaper/49b8bba9-3c38-4248-a1de-7fd2d6823966.jpg",
+            "haveUp": false,
+            "upCount": 11089
+        }, {
+            "relationId": "6769053e-cde2-46d5-97c7-bfb977c134ba",
+            "imageUrl": "http://imgg.ddn.duodutek.com/wallpaper/6769053e-cde2-46d5-97c7-bfb977c134ba.jpg",
+            "imageUrlSmall": "http://imgg.ddn.duodutek.com/wallpaper/d316f69e-da00-4aee-b096-24fc14cb1f30.jpg",
+            "haveUp": false,
+            "upCount": 18710
+        }]
+    }
+}

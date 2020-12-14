@@ -1,0 +1,84 @@
+{
+    "code": 0,
+    "msg": null,
+    "url": null,
+    "data": {
+        "totalSize": 4,
+        "totalPageCount": 1,
+        "pageIndex": 1,
+        "pageSize": 12,
+        "list": [{
+            "groupId": "91ce509d-9df0-4101-87d7-21091af08964",
+            "groupName": "甜美",
+            "haveUp": false,
+            "upCount": 860,
+            "imageList": [{
+                "relationId": "85a6c4f4-78a0-4c88-8f4f-367c38602ee7",
+                "imageUrl": "http://imgg.ddn.duodutek.com/wallpaper/85a6c4f4-78a0-4c88-8f4f-367c38602ee7.jpg",
+                "imageUrlSmall": "http://imgg.ddn.duodutek.com/wallpaper/1ba5fe63-0cb0-4a20-876f-56ee788ed1cb.jpg",
+                "haveUp": false,
+                "upCount": 15456
+            }, {
+                "relationId": "2c9c870b-7688-4c5b-89c0-6b8bc306812a",
+                "imageUrl": "http://imgg.ddn.duodutek.com/wallpaper/2c9c870b-7688-4c5b-89c0-6b8bc306812a.jpg",
+                "imageUrlSmall": "http://imgg.ddn.duodutek.com/wallpaper/ad795442-d7fe-40b5-8cbd-e10b5fa6476e.jpg",
+                "haveUp": false,
+                "upCount": 9399
+            }]
+        }, {
+            "groupId": "33231397-ad72-4cc1-898f-35952275cf1f",
+            "groupName": "暗黑系",
+            "haveUp": false,
+            "upCount": 662,
+            "imageList": [{
+                "relationId": "d849cded-c4f3-4808-9a8f-02131207e15a",
+                "imageUrl": "http://imgg.ddn.duodutek.com/wallpaper/d849cded-c4f3-4808-9a8f-02131207e15a.jpg",
+                "imageUrlSmall": "http://imgg.ddn.duodutek.com/wallpaper/5ea88ce6-e3b6-4e80-ad98-21920feb1870.jpg",
+                "haveUp": false,
+                "upCount": 27995
+            }, {
+                "relationId": "a4c281a2-3be4-4736-afd8-9497dedd44b0",
+                "imageUrl": "http://imgg.ddn.duodutek.com/wallpaper/a4c281a2-3be4-4736-afd8-9497dedd44b0.jpg",
+                "imageUrlSmall": "http://imgg.ddn.duodutek.com/wallpaper/2dfa7e27-7ec0-4fa3-b908-b517a224994d.jpg",
+                "haveUp": false,
+                "upCount": 15153
+            }]
+        }, {
+            "groupId": "5577aa0a-465e-4580-a2f1-feef3e82e633",
+            "groupName": "风景",
+            "haveUp": false,
+            "upCount": 824,
+            "imageList": [{
+                "relationId": "b2299eca-c758-4d01-84c7-97c3803ce080",
+                "imageUrl": "http://imgg.ddn.duodutek.com/wallpaper/b2299eca-c758-4d01-84c7-97c3803ce080.jpg",
+                "imageUrlSmall": "http://imgg.ddn.duodutek.com/wallpaper/e782e0e7-2f8a-426b-a21f-681a9a404533.jpg",
+                "haveUp": false,
+                "upCount": 9135
+            }, {
+                "relationId": "75ab6eef-ae58-483a-ba58-1cfedbbabc77",
+                "imageUrl": "http://imgg.ddn.duodutek.com/wallpaper/75ab6eef-ae58-483a-ba58-1cfedbbabc77.jpg",
+                "imageUrlSmall": "http://imgg.ddn.duodutek.com/wallpaper/a9b71195-b0c8-40c3-bced-91bba37f8607.jpg",
+                "haveUp": false,
+                "upCount": 21652
+            }]
+        }, {
+            "groupId": "c6eb396a-9a45-4147-848c-a9bbd2c2e648",
+            "groupName": "文艺",
+            "haveUp": false,
+            "upCount": 818,
+            "imageList": [{
+                "relationId": "19478351-d007-4456-8fea-67593796cc10",
+                "imageUrl": "http://imgg.ddn.duodutek.com/wallpaper/19478351-d007-4456-8fea-67593796cc10.jpg",
+                "imageUrlSmall": "http://imgg.ddn.duodutek.com/wallpaper/8dcfb990-9830-48d1-ae95-29945f86b4f5.jpg",
+                "haveUp": false,
+                "upCount": 25037
+            }, {
+                "relationId": "98b25d1f-a579-4422-87ea-1988a888b350",
+                "imageUrl": "http://imgg.ddn.duodutek.com/wallpaper/98b25d1f-a579-4422-87ea-1988a888b350.jpg",
+                "imageUrlSmall": "http://imgg.ddn.duodutek.com/wallpaper/b7187393-a4e5-48a4-b121-86612e6ae4a1.jpg",
+                "haveUp": false,
+                "upCount": 1962
+            }]
+        }]
+    }
+}
