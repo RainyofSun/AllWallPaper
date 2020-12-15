@@ -53,7 +53,7 @@
 }
 
 - (void)didSelectedWallPaper:(AWDiscoverCellModel *)paperModel {
-    FLOG(@"选择了 %@",paperModel);
+    [[self.detailView nearsetViewController].navigationController pushViewController:[FLModuleMsgSend sendMsg:paperModel.visitUrl vcName:@"AWDynamicDetailViewController"] animated:YES];
 }
 
 #pragma mark - private methods

@@ -56,6 +56,15 @@
 		13451A2A257DF7C20031F004 /* AWHeadPortraitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13451A28257DF7C20031F004 /* AWHeadPortraitViewController.xib */; };
 		13451A2E257DF7E20031F004 /* AWStaticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13451A2C257DF7E20031F004 /* AWStaticViewController.m */; };
 		13451A2F257DF7E20031F004 /* AWStaticViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13451A2D257DF7E20031F004 /* AWStaticViewController.xib */; };
+		2214619C25885BEE00E61651 /* AWBeiJingDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2214619B25885BEE00E61651 /* AWBeiJingDetailView.m */; };
+		2214619E25885C0200E61651 /* AWBeiJingDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2214619D25885C0200E61651 /* AWBeiJingDetailView.xib */; };
+		2216172725887FA400781427 /* AWDynamicDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2216172525887FA400781427 /* AWDynamicDetailViewController.m */; };
+		2216172825887FA400781427 /* AWDynamicDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2216172625887FA400781427 /* AWDynamicDetailViewController.xib */; };
+		2216172C25887FE000781427 /* AWDynamicDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2216172B25887FE000781427 /* AWDynamicDetailViewModel.m */; };
+		221617302588804E00781427 /* AWDynamicDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2216172F2588804E00781427 /* AWDynamicDetailView.m */; };
+		221617322588805800781427 /* AWDynamicDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221617312588805800781427 /* AWDynamicDetailView.xib */; };
+		22161738258882B500781427 /* FWNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 22161735258882B500781427 /* FWNetworkTool.m */; };
+		22161739258882B500781427 /* FWNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 22161736258882B500781427 /* FWNetworkConfig.m */; };
 		221C96DD25874C1400C17B07 /* AWStaticLocalDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 221C96DC25874C1400C17B07 /* AWStaticLocalDataTool.m */; };
 		221C96E22587521C00C17B07 /* touXiang0.json in Resources */ = {isa = PBXBuildFile; fileRef = 221C96E02587521C00C17B07 /* touXiang0.json */; };
 		221C96E62587525000C17B07 /* beiJing0.json in Resources */ = {isa = PBXBuildFile; fileRef = 221C96E52587525000C17B07 /* beiJing0.json */; };
@@ -152,12 +161,10 @@
 		221C97BF25875C5300C17B07 /* keAi1.json in Resources */ = {isa = PBXBuildFile; fileRef = 221C97BD25875C5300C17B07 /* keAi1.json */; };
 		221C97C325875C8F00C17B07 /* tianMei0.json in Resources */ = {isa = PBXBuildFile; fileRef = 221C97C125875C8E00C17B07 /* tianMei0.json */; };
 		221C97C425875C8F00C17B07 /* tianMei1.json in Resources */ = {isa = PBXBuildFile; fileRef = 221C97C225875C8F00C17B07 /* tianMei1.json */; };
-		221C97C825875CF000C17B07 /* tianMeiB1.json in Resources */ = {isa = PBXBuildFile; fileRef = 221C97C625875CEF00C17B07 /* tianMeiB1.json */; };
 		221C97C925875CF000C17B07 /* tianMeiB0.json in Resources */ = {isa = PBXBuildFile; fileRef = 221C97C725875CF000C17B07 /* tianMeiB0.json */; };
 		221C97CC25875D2900C17B07 /* anHei0.json in Resources */ = {isa = PBXBuildFile; fileRef = 221C97CB25875D2900C17B07 /* anHei0.json */; };
 		221C97CF25875D5C00C17B07 /* fengJingB0.json in Resources */ = {isa = PBXBuildFile; fileRef = 221C97CE25875D5C00C17B07 /* fengJingB0.json */; };
 		221C97D325875DA300C17B07 /* wenYiB0.json in Resources */ = {isa = PBXBuildFile; fileRef = 221C97D125875DA200C17B07 /* wenYiB0.json */; };
-		221C97D425875DA300C17B07 /* wenYiB1.json in Resources */ = {isa = PBXBuildFile; fileRef = 221C97D225875DA300C17B07 /* wenYiB1.json */; };
 		221C97D725875E2600C17B07 /* AWHeadPortraitViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 221C97D625875E2600C17B07 /* AWHeadPortraitViewModel.m */; };
 		221C97DA25875EC000C17B07 /* AWHeadPortraitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 221C97D925875EC000C17B07 /* AWHeadPortraitView.m */; };
 		221C97DC25875F8000C17B07 /* AWHeadPortraitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221C97DB25875F8000C17B07 /* AWHeadPortraitView.xib */; };
@@ -170,6 +177,10 @@
 		221C97F02587687200C17B07 /* AWHeadBeiJingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221C97EE2587687200C17B07 /* AWHeadBeiJingTableViewCell.xib */; };
 		221C97FA25876C0100C17B07 /* AWHeadPortraitSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221C97F825876C0100C17B07 /* AWHeadPortraitSubViewController.m */; };
 		221C97FB25876C0100C17B07 /* AWHeadPortraitSubViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221C97F925876C0100C17B07 /* AWHeadPortraitSubViewController.xib */; };
+		221C980125883B9000C17B07 /* AWHeadPortaritDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221C97FF25883B9000C17B07 /* AWHeadPortaritDetailViewController.m */; };
+		221C980225883B9000C17B07 /* AWHeadPortaritDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221C980025883B9000C17B07 /* AWHeadPortaritDetailViewController.xib */; };
+		221C980625883BB300C17B07 /* AWHeadPortaritDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 221C980525883BB300C17B07 /* AWHeadPortaritDetailViewModel.m */; };
+		221C980A25883EF400C17B07 /* AWHeadDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 221C980925883EF400C17B07 /* AWHeadDetailView.m */; };
 		223A57D22586F41A002DF361 /* xuanKu2.json in Resources */ = {isa = PBXBuildFile; fileRef = 223A57982586F41A002DF361 /* xuanKu2.json */; };
 		223A57D32586F41A002DF361 /* xuanKu1.json in Resources */ = {isa = PBXBuildFile; fileRef = 223A57992586F41A002DF361 /* xuanKu1.json */; };
 		223A57D42586F41A002DF361 /* xuanKu0.json in Resources */ = {isa = PBXBuildFile; fileRef = 223A579A2586F41A002DF361 /* xuanKu0.json */; };
@@ -493,6 +504,21 @@
 		13451A2B257DF7E20031F004 /* AWStaticViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWStaticViewController.h; sourceTree = "<group>"; };
 		13451A2C257DF7E20031F004 /* AWStaticViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWStaticViewController.m; sourceTree = "<group>"; };
 		13451A2D257DF7E20031F004 /* AWStaticViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AWStaticViewController.xib; sourceTree = "<group>"; };
+		2214619A25885BEE00E61651 /* AWBeiJingDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWBeiJingDetailView.h; sourceTree = "<group>"; };
+		2214619B25885BEE00E61651 /* AWBeiJingDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWBeiJingDetailView.m; sourceTree = "<group>"; };
+		2214619D25885C0200E61651 /* AWBeiJingDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AWBeiJingDetailView.xib; sourceTree = "<group>"; };
+		2216172425887FA400781427 /* AWDynamicDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWDynamicDetailViewController.h; sourceTree = "<group>"; };
+		2216172525887FA400781427 /* AWDynamicDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWDynamicDetailViewController.m; sourceTree = "<group>"; };
+		2216172625887FA400781427 /* AWDynamicDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AWDynamicDetailViewController.xib; sourceTree = "<group>"; };
+		2216172A25887FE000781427 /* AWDynamicDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWDynamicDetailViewModel.h; sourceTree = "<group>"; };
+		2216172B25887FE000781427 /* AWDynamicDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWDynamicDetailViewModel.m; sourceTree = "<group>"; };
+		2216172E2588804E00781427 /* AWDynamicDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWDynamicDetailView.h; sourceTree = "<group>"; };
+		2216172F2588804E00781427 /* AWDynamicDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWDynamicDetailView.m; sourceTree = "<group>"; };
+		221617312588805800781427 /* AWDynamicDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AWDynamicDetailView.xib; sourceTree = "<group>"; };
+		22161734258882B500781427 /* FWNetworkConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWNetworkConfig.h; sourceTree = "<group>"; };
+		22161735258882B500781427 /* FWNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWNetworkTool.m; sourceTree = "<group>"; };
+		22161736258882B500781427 /* FWNetworkConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWNetworkConfig.m; sourceTree = "<group>"; };
+		22161737258882B500781427 /* FWNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWNetworkTool.h; sourceTree = "<group>"; };
 		221C96DB25874C1400C17B07 /* AWStaticLocalDataTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWStaticLocalDataTool.h; sourceTree = "<group>"; };
 		221C96DC25874C1400C17B07 /* AWStaticLocalDataTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWStaticLocalDataTool.m; sourceTree = "<group>"; };
 		221C96E02587521C00C17B07 /* touXiang0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = touXiang0.json; sourceTree = "<group>"; };
@@ -590,12 +616,10 @@
 		221C97BD25875C5300C17B07 /* keAi1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = keAi1.json; sourceTree = "<group>"; };
 		221C97C125875C8E00C17B07 /* tianMei0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tianMei0.json; sourceTree = "<group>"; };
 		221C97C225875C8F00C17B07 /* tianMei1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tianMei1.json; sourceTree = "<group>"; };
-		221C97C625875CEF00C17B07 /* tianMeiB1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tianMeiB1.json; sourceTree = "<group>"; };
 		221C97C725875CF000C17B07 /* tianMeiB0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tianMeiB0.json; sourceTree = "<group>"; };
 		221C97CB25875D2900C17B07 /* anHei0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = anHei0.json; sourceTree = "<group>"; };
 		221C97CE25875D5C00C17B07 /* fengJingB0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fengJingB0.json; sourceTree = "<group>"; };
 		221C97D125875DA200C17B07 /* wenYiB0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wenYiB0.json; sourceTree = "<group>"; };
-		221C97D225875DA300C17B07 /* wenYiB1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wenYiB1.json; sourceTree = "<group>"; };
 		221C97D525875E2600C17B07 /* AWHeadPortraitViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWHeadPortraitViewModel.h; sourceTree = "<group>"; };
 		221C97D625875E2600C17B07 /* AWHeadPortraitViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWHeadPortraitViewModel.m; sourceTree = "<group>"; };
 		221C97D825875EC000C17B07 /* AWHeadPortraitView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWHeadPortraitView.h; sourceTree = "<group>"; };
@@ -615,6 +639,13 @@
 		221C97F725876C0100C17B07 /* AWHeadPortraitSubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWHeadPortraitSubViewController.h; sourceTree = "<group>"; };
 		221C97F825876C0100C17B07 /* AWHeadPortraitSubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWHeadPortraitSubViewController.m; sourceTree = "<group>"; };
 		221C97F925876C0100C17B07 /* AWHeadPortraitSubViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AWHeadPortraitSubViewController.xib; sourceTree = "<group>"; };
+		221C97FE25883B9000C17B07 /* AWHeadPortaritDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWHeadPortaritDetailViewController.h; sourceTree = "<group>"; };
+		221C97FF25883B9000C17B07 /* AWHeadPortaritDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWHeadPortaritDetailViewController.m; sourceTree = "<group>"; };
+		221C980025883B9000C17B07 /* AWHeadPortaritDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AWHeadPortaritDetailViewController.xib; sourceTree = "<group>"; };
+		221C980425883BB300C17B07 /* AWHeadPortaritDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWHeadPortaritDetailViewModel.h; sourceTree = "<group>"; };
+		221C980525883BB300C17B07 /* AWHeadPortaritDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWHeadPortaritDetailViewModel.m; sourceTree = "<group>"; };
+		221C980825883EF400C17B07 /* AWHeadDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWHeadDetailView.h; sourceTree = "<group>"; };
+		221C980925883EF400C17B07 /* AWHeadDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWHeadDetailView.m; sourceTree = "<group>"; };
 		223A57982586F41A002DF361 /* xuanKu2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = xuanKu2.json; sourceTree = "<group>"; };
 		223A57992586F41A002DF361 /* xuanKu1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = xuanKu1.json; sourceTree = "<group>"; };
 		223A579A2586F41A002DF361 /* xuanKu0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = xuanKu0.json; sourceTree = "<group>"; };
@@ -1006,6 +1037,7 @@
 		134519AA257DE16B0031F004 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				22161733258882B500781427 /* Net */,
 				134519BB257DE1740031F004 /* HUD */,
 				134519AB257DE1740031F004 /* LocalDataTool */,
 				134519B4257DE1740031F004 /* MsgSend */,
@@ -1248,6 +1280,7 @@
 		13451A17257DF76C0031F004 /* Dynamic */ = {
 			isa = PBXGroup;
 			children = (
+				2216172225887F7700781427 /* DynamicDetail */,
 				223A58BE2587096C002DF361 /* DynamicFenLei */,
 				22C523FA2581DEA000BACBD5 /* DynamicHome */,
 			);
@@ -1304,6 +1337,7 @@
 		13451A1C257DF76C0031F004 /* HeadPortrait */ = {
 			isa = PBXGroup;
 			children = (
+				221C97FC25883B6200C17B07 /* HeadPortaritDetail */,
 				C810F2DB2587B26500A6CD4A /* HeadPortraitHome */,
 			);
 			path = HeadPortrait;
@@ -1345,6 +1379,56 @@
 				221C97E52587678900C17B07 /* TouXiangView */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2216172225887F7700781427 /* DynamicDetail */ = {
+			isa = PBXGroup;
+			children = (
+				2216172D2588804100781427 /* View */,
+				2216172925887FBE00781427 /* VM */,
+				2216172325887F8400781427 /* VC */,
+			);
+			path = DynamicDetail;
+			sourceTree = "<group>";
+		};
+		2216172325887F8400781427 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				2216172425887FA400781427 /* AWDynamicDetailViewController.h */,
+				2216172525887FA400781427 /* AWDynamicDetailViewController.m */,
+				2216172625887FA400781427 /* AWDynamicDetailViewController.xib */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		2216172925887FBE00781427 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				2216172A25887FE000781427 /* AWDynamicDetailViewModel.h */,
+				2216172B25887FE000781427 /* AWDynamicDetailViewModel.m */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		2216172D2588804100781427 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2216172E2588804E00781427 /* AWDynamicDetailView.h */,
+				2216172F2588804E00781427 /* AWDynamicDetailView.m */,
+				221617312588805800781427 /* AWDynamicDetailView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22161733258882B500781427 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				22161734258882B500781427 /* FWNetworkConfig.h */,
+				22161735258882B500781427 /* FWNetworkTool.m */,
+				22161736258882B500781427 /* FWNetworkConfig.m */,
+				22161737258882B500781427 /* FWNetworkTool.h */,
+			);
+			path = Net;
 			sourceTree = "<group>";
 		};
 		221C96DE258751C800C17B07 /* TouXiang */ = {
@@ -1601,7 +1685,6 @@
 			isa = PBXGroup;
 			children = (
 				221C97C725875CF000C17B07 /* tianMeiB0.json */,
-				221C97C625875CEF00C17B07 /* tianMeiB1.json */,
 			);
 			path = TianMei;
 			sourceTree = "<group>";
@@ -1626,7 +1709,6 @@
 			isa = PBXGroup;
 			children = (
 				221C97D125875DA200C17B07 /* wenYiB0.json */,
-				221C97D225875DA300C17B07 /* wenYiB1.json */,
 			);
 			path = WenYi;
 			sourceTree = "<group>";
@@ -1665,6 +1747,47 @@
 				221C97F925876C0100C17B07 /* AWHeadPortraitSubViewController.xib */,
 			);
 			path = HeadPortraitSubVC;
+			sourceTree = "<group>";
+		};
+		221C97FC25883B6200C17B07 /* HeadPortaritDetail */ = {
+			isa = PBXGroup;
+			children = (
+				221C980725883EB300C17B07 /* View */,
+				221C980325883B9A00C17B07 /* VM */,
+				221C97FD25883B7200C17B07 /* VC */,
+			);
+			path = HeadPortaritDetail;
+			sourceTree = "<group>";
+		};
+		221C97FD25883B7200C17B07 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				221C97FE25883B9000C17B07 /* AWHeadPortaritDetailViewController.h */,
+				221C97FF25883B9000C17B07 /* AWHeadPortaritDetailViewController.m */,
+				221C980025883B9000C17B07 /* AWHeadPortaritDetailViewController.xib */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		221C980325883B9A00C17B07 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				221C980425883BB300C17B07 /* AWHeadPortaritDetailViewModel.h */,
+				221C980525883BB300C17B07 /* AWHeadPortaritDetailViewModel.m */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		221C980725883EB300C17B07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				221C980825883EF400C17B07 /* AWHeadDetailView.h */,
+				221C980925883EF400C17B07 /* AWHeadDetailView.m */,
+				2214619A25885BEE00E61651 /* AWBeiJingDetailView.h */,
+				2214619B25885BEE00E61651 /* AWBeiJingDetailView.m */,
+				2214619D25885C0200E61651 /* AWBeiJingDetailView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		223A57962586F41A002DF361 /* Static */ = {
@@ -2422,6 +2545,7 @@
 				221C9741258755EB00C17B07 /* mingXingT4.json in Resources */,
 				22C523A82581D9BB00BACBD5 /* nanShen3.json in Resources */,
 				221C978B258759F000C17B07 /* geXing9.json in Resources */,
+				221C980225883B9000C17B07 /* AWHeadPortaritDetailViewController.xib in Resources */,
 				221C9723258754A600C17B07 /* qingLvT4.json in Resources */,
 				223A58282586F69A002DF361 /* nanShenH2.json in Resources */,
 				22C523DD2581DC9500BACBD5 /* chenQing0.json in Resources */,
@@ -2459,6 +2583,7 @@
 				221C97702587592B00C17B07 /* qingXin6.json in Resources */,
 				223A58902586F9E5002DF361 /* wenZi0.json in Resources */,
 				223A58002586F41A002DF361 /* jingXuan3.json in Resources */,
+				221617322588805800781427 /* AWDynamicDetailView.xib in Resources */,
 				223A58392586F73A002DF361 /* mengChongH9.json in Resources */,
 				221C979625875AC200C17B07 /* weiMeiT4.json in Resources */,
 				223A58A22586FB90002DF361 /* fengJingH8.json in Resources */,
@@ -2502,7 +2627,7 @@
 				221C97C325875C8F00C17B07 /* tianMei0.json in Resources */,
 				223A57D92586F41A002DF361 /* yiShu1.json in Resources */,
 				223A57EB2586F41A002DF361 /* animal4.json in Resources */,
-				221C97D425875DA300C17B07 /* wenYiB1.json in Resources */,
+				2214619E25885C0200E61651 /* AWBeiJingDetailView.xib in Resources */,
 				221C976F2587592B00C17B07 /* qingXin7.json in Resources */,
 				223A57E22586F41A002DF361 /* new4.json in Resources */,
 				223A58A32586FB90002DF361 /* fengJingH4.json in Resources */,
@@ -2528,7 +2653,6 @@
 				221C96F52587539200C17B07 /* zhiYu6.json in Resources */,
 				221C9742258755EB00C17B07 /* mingXingT1.json in Resources */,
 				221C9729258754A600C17B07 /* qingLvT7.json in Resources */,
-				221C97C825875CF000C17B07 /* tianMeiB1.json in Resources */,
 				223A57FB2586F41A002DF361 /* jingXuan7.json in Resources */,
 				221C96F82587539200C17B07 /* zhiYu12.json in Resources */,
 				223A57D82586F41A002DF361 /* yiShu0.json in Resources */,
@@ -2591,6 +2715,7 @@
 				223A582B2586F69A002DF361 /* nanShenH1.json in Resources */,
 				223A58BD25870962002DF361 /* hotS3.json in Resources */,
 				223A58242586F69A002DF361 /* nanShenH8.json in Resources */,
+				2216172825887FA400781427 /* AWDynamicDetailViewController.xib in Resources */,
 				221C9787258759F000C17B07 /* geXing3.json in Resources */,
 				223A583A2586F73A002DF361 /* mengChongH5.json in Resources */,
 				22C5241C258218F200BACBD5 /* AWDynamicSectionHeaderView.xib in Resources */,
@@ -2780,8 +2905,11 @@
 				13451A09257DE6AE0031F004 /* AWMainViewController.m in Sources */,
 				223A58D425871D9D002DF361 /* AWStaticViewModel.m in Sources */,
 				22C5243A25833FBE00BACBD5 /* AppCycleCollectionViewCell.m in Sources */,
+				2214619C25885BEE00E61651 /* AWBeiJingDetailView.m in Sources */,
+				221C980625883BB300C17B07 /* AWHeadPortaritDetailViewModel.m in Sources */,
 				134519A3257DE1290031F004 /* NSObject+DataTransformToDict.m in Sources */,
 				22E8183B2583516D0064F319 /* AWDiscoverCollectionViewCell.m in Sources */,
+				2216172725887FA400781427 /* AWDynamicDetailViewController.m in Sources */,
 				223A58CC25870BF7002DF361 /* AWFenLeiDetailView.m in Sources */,
 				22C5241A258218E000BACBD5 /* AWDynamicSectionHeaderView.m in Sources */,
 				223A58DA25873A13002DF361 /* AWStaticView.m in Sources */,
@@ -2832,7 +2960,10 @@
 				134519C1257DE1740031F004 /* RuntimeTool.m in Sources */,
 				134519A8257DE1290031F004 /* UIButton+CustomBtn.m in Sources */,
 				134519C2257DE1740031F004 /* FLModuleMsgSend.m in Sources */,
+				22161738258882B500781427 /* FWNetworkTool.m in Sources */,
 				221C97DA25875EC000C17B07 /* AWHeadPortraitView.m in Sources */,
+				221C980A25883EF400C17B07 /* AWHeadDetailView.m in Sources */,
+				2216172C25887FE000781427 /* AWDynamicDetailViewModel.m in Sources */,
 				22C5243E2583408F00BACBD5 /* AWDynamicSliderBar.m in Sources */,
 				13451A00257DE5200031F004 /* AWNavigationViewController.m in Sources */,
 				134519BE257DE1740031F004 /* MPLocalData.m in Sources */,
@@ -2840,10 +2971,13 @@
 				1345198A257DDF180031F004 /* Reachability.m in Sources */,
 				134519E6257DE1BF0031F004 /* XLPageViewController.m in Sources */,
 				221C97D725875E2600C17B07 /* AWHeadPortraitViewModel.m in Sources */,
+				221617302588804E00781427 /* AWDynamicDetailView.m in Sources */,
 				22C5242725821E6E00BACBD5 /* AWFenLeiModel.m in Sources */,
 				1345197A257DDE0F0031F004 /* main.m in Sources */,
 				134519FF257DE5200031F004 /* AWBaseViewController+CatchMsg.m in Sources */,
 				134519EA257DE1BF0031F004 /* XLPageTitleCell.m in Sources */,
+				221C980125883B9000C17B07 /* AWHeadPortaritDetailViewController.m in Sources */,
+				22161739258882B500781427 /* FWNetworkConfig.m in Sources */,
 				22E8183725834FAF0064F319 /* AWDiscoverCollectionView.m in Sources */,
 				22C52441258341DD00BACBD5 /* AWDynamicDiscoverViewModel.m in Sources */,
 				134519A9257DE1290031F004 /* UINavigationController+NavigationBar.m in Sources */,

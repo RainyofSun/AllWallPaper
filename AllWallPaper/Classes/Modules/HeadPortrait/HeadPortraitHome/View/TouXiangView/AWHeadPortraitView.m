@@ -49,6 +49,7 @@ static NSString *HeadPortraitCell = @"HeadPortraitCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     AWHeadPortraitTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:HeadPortraitCell];
     [cell loadHeadPortraitCellModel:self.dataSource[indexPath.row].imageList typeName:self.dataSource[indexPath.row].groupName];
+    cell.tag = indexPath.row;
     return cell;
 }
 

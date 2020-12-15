@@ -23,6 +23,12 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rIq-EU-Ylg">
                                 <rect key="frame" x="3" y="3" width="314" height="174"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ES1-If-LOz">
+                                <rect key="frame" x="11" y="157" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -30,6 +36,8 @@
                             <constraint firstAttribute="trailing" secondItem="rIq-EU-Ylg" secondAttribute="trailing" constant="3" id="GDH-UT-Vvs"/>
                             <constraint firstItem="rIq-EU-Ylg" firstAttribute="top" secondItem="COE-B2-zPE" secondAttribute="top" constant="3" id="JR2-sz-rPp"/>
                             <constraint firstAttribute="bottom" secondItem="rIq-EU-Ylg" secondAttribute="bottom" constant="3" id="YxY-fy-Ec8"/>
+                            <constraint firstItem="ES1-If-LOz" firstAttribute="leading" secondItem="rIq-EU-Ylg" secondAttribute="leading" constant="8" id="f7e-iz-c97"/>
+                            <constraint firstItem="rIq-EU-Ylg" firstAttribute="bottom" secondItem="ES1-If-LOz" secondAttribute="bottom" constant="20" id="gqo-rw-B6M"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -45,6 +53,7 @@
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
                 <outlet property="beiJingImgView" destination="rIq-EU-Ylg" id="mrm-92-86k"/>
+                <outlet property="typeLab" destination="ES1-If-LOz" id="13u-I4-Y5v"/>
             </connections>
             <point key="canvasLocation" x="132" y="120"/>
         </tableViewCell>

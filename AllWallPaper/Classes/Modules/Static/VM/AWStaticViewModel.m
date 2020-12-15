@@ -123,8 +123,7 @@ static NSString *StaticTopSliderBarIndifier = @"StaticTopSliderBarIndifier";
 }
 
 - (void)didSelectedWallPaper:(AWStaticCellModel *)paperModel {
-    FLOG(@"选择 %@",paperModel);
-//    [self.pageControlView.parentViewController.navigationController pushViewController:[FLModuleMsgSend sendMsg:@{@"thumblink":paperModel.thumblink,@"downloadUrl":paperModel.link} vcName:@"FWWallPaperDetailViewController"] animated:YES];
+    [self.pageControlView.parentViewController.navigationController pushViewController:[FLModuleMsgSend sendMsg:paperModel.imageUrl vcName:@"AWDynamicDetailViewController"] animated:YES];
 }
 
 #pragma mark - private methods

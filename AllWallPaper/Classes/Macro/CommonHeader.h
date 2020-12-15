@@ -18,6 +18,7 @@
 #import <BUFoundation/BUFoundation.h>
 #import <AdSupport/AdSupport.h>
 #import <MJRefresh/MJRefresh.h>
+#import <AFNetworking/AFHTTPSessionManager.h>
 
 // 分类
 #import "UIViewController+Navigation.h"
@@ -45,5 +46,6 @@
 #import "FWRefreshFooter.h"
 #import "MPLocalData.h"
 #import "AppCycleScrollview.h"
+#import "FWNetworkTool.h"
 
 #endif /* CommonHeader_h */

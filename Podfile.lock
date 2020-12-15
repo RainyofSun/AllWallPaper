@@ -1,4 +1,11 @@
 PODS:
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
   - Bytedance-UnionAD (2.9.0.1)
   - MBProgressHUD (1.2.0)
   - MJExtension (3.2.2)
@@ -8,6 +15,10 @@ PODS:
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
+  - AFNetworking/NSURLSession (~> 3.1.0)
+  - AFNetworking/Reachability (~> 3.1.0)
+  - AFNetworking/Security (~> 3.1.0)
+  - AFNetworking/Serialization (~> 3.1.0)
   - Bytedance-UnionAD
   - MBProgressHUD
   - MJExtension
@@ -16,6 +27,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - AFNetworking
     - Bytedance-UnionAD
     - MBProgressHUD
     - MJExtension
@@ -23,12 +35,13 @@ SPEC REPOS:
     - YYKit
 
 SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Bytedance-UnionAD: e145f7e98e5a714332d7d31e764696e569483755
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 47855499d2856d08cfcab00e6afefaecdf5bc545
+PODFILE CHECKSUM: 4f0174a4abc0cd09a1ebfcd38f6001c6b9e0f7e2
 
 COCOAPODS: 1.10.0

@@ -112,7 +112,7 @@
 }
 
 - (void)didSelectedWallPaper:(AWDiscoverCellModel *)paperModel {
-    NSLog(@"page %@",paperModel);
+    [[self.discoverView nearsetViewController].navigationController pushViewController:[FLModuleMsgSend sendMsg:paperModel.visitUrl vcName:@"AWDynamicDetailViewController"] animated:YES];
 }
 
 #pragma mark - private methods

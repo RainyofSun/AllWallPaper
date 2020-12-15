@@ -1,26 +1,25 @@
 //
-//  AWHeadBeiJingView.m
+//  AWBeiJingDetailView.m
 //  AllWallPaper
 //
-//  Created by macos on 2020/12/14.
+//  Created by macos on 2020/12/15.
 //  Copyright © 2020 EGLS_BMAC. All rights reserved.
 //
 
-#import "AWHeadBeiJingView.h"
+#import "AWBeiJingDetailView.h"
 #import "AWHeadBeiJingTableViewCell.h"
 
 static NSString *HeadBeiJingCell = @"HeadBeiJingCell";
 
-@interface AWHeadBeiJingView ()<UITableViewDelegate,UITableViewDataSource>
+@interface AWBeiJingDetailView ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *beiJingTableView;
-
 /** dataSource */
-@property (nonatomic,strong) NSArray <AWHeadPortraitModel *>*dataSource;
+@property (nonatomic,strong) NSArray <AWStaticCellModel *>*dataSource;
 
 @end
 
-@implementation AWHeadBeiJingView
+@implementation AWBeiJingDetailView
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -31,8 +30,9 @@ static NSString *HeadBeiJingCell = @"HeadBeiJingCell";
     NSLog(@"DELLOC %@",NSStringFromClass(self.class));
 }
 
-- (void)loadHeadPortraitBeiJingTableViewSource:(NSArray<AWHeadPortraitModel *> *)headSource {
-    self.dataSource = headSource;
+#pragma mark - public methods
+- (void)loadBeiJingDetailSource:(NSArray<AWStaticCellModel *> *)paperSource {
+    self.dataSource = paperSource;
     [self.beiJingTableView reloadData];
 }
 
@@ -47,12 +47,14 @@ static NSString *HeadBeiJingCell = @"HeadBeiJingCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     AWHeadBeiJingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:HeadBeiJingCell];
-    [cell loadHeadBeiJingCellSource:self.dataSource[indexPath.row].imageList.firstObject.imageUrlSmall tynaName:self.dataSource[indexPath.row].groupName];
+    [cell loadHeadBeiJingCellSource:self.dataSource[indexPath.row].imageUrlSmall tynaName:@""];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [[self nearsetViewController].navigationController pushViewController:[FLModuleMsgSend sendMsg:@{@"title":self.dataSource[indexPath.row].groupName,@"index":@(indexPath.row),@"viewStyle":@(1)} vcName:@"AWHeadPortaritDetailViewController"] animated:YES];
+    if (self.beiJingDelegate != nil && [self.beiJingDelegate respondsToSelector:@selector(didSelectedBeiJingPaper:)]) {
+        [self.beiJingDelegate didSelectedBeiJingPaper:self.dataSource[indexPath.row].imageUrl];
+    }
 }
 
 #pragma mark - private methods

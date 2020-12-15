@@ -36,16 +36,15 @@
     self.typeLab.text = name;
     [self.leftImgBtn loadBackgroudNetworkImg:modelSource.firstObject.imageUrlSmall bigPlaceHolder:NO];
     [self.rightImgBtn loadBackgroudNetworkImg:modelSource.lastObject.imageUrlSmall bigPlaceHolder:NO];
-//    self.leftImgBtn.contentMode = self.rightImgBtn.contentMode = UIViewContentModeScaleAspectFill;
     self.cellSource = modelSource;
 }
 
 - (IBAction)showMore:(UIButton *)sender {
-
+    [[self nearsetViewController].navigationController pushViewController:[FLModuleMsgSend sendMsg:@{@"title":self.typeLab.text,@"index":@(self.tag),@"viewStyle":@(0)} vcName:@"AWHeadPortaritDetailViewController"] animated:YES];
 }
 
 - (IBAction)touchImg:(UIButton *)sender {
-
+    [[self nearsetViewController].navigationController pushViewController:[FLModuleMsgSend sendMsg:self.cellSource[sender.tag].imageUrl vcName:@"AWDynamicDetailViewController"] animated:YES];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

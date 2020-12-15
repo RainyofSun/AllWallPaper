@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AWDynamicDetailView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uQ5-6g-7Ah">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N2D-Cc-BEH">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qP-ic-bJb">
+                            <rect key="frame" x="20" y="30" width="35" height="38.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="5qP-ic-bJb" secondAttribute="height" multiplier="10:11" id="lzT-L2-EZU"/>
+                                <constraint firstAttribute="width" constant="35" id="spa-6Z-Lvg"/>
+                            </constraints>
+                            <state key="normal" image="retBtnNormal"/>
+                            <connections>
+                                <action selector="clickBackBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="ojq-XQ-erY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wta-3X-daF">
+                            <rect key="frame" x="147" y="833" width="120" height="33"/>
+                            <color key="backgroundColor" red="0.1764705882" green="0.83529411760000005" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="HGp-cO-DgF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="下载壁纸"/>
+                            <connections>
+                                <action selector="clickDownloadBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="4nt-Sk-5bA"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="N2D-Cc-BEH" firstAttribute="top" secondItem="uQ5-6g-7Ah" secondAttribute="top" id="7Ro-9g-6LJ"/>
+                        <constraint firstItem="5qP-ic-bJb" firstAttribute="top" secondItem="uQ5-6g-7Ah" secondAttribute="top" constant="30" id="BuG-5s-jnB"/>
+                        <constraint firstAttribute="trailing" secondItem="N2D-Cc-BEH" secondAttribute="trailing" id="Cdo-IX-qkh"/>
+                        <constraint firstItem="5qP-ic-bJb" firstAttribute="leading" secondItem="uQ5-6g-7Ah" secondAttribute="leading" constant="20" id="RnM-vl-V0Q"/>
+                        <constraint firstAttribute="bottom" secondItem="N2D-Cc-BEH" secondAttribute="bottom" id="XQa-n7-sZR"/>
+                        <constraint firstAttribute="bottom" secondItem="wta-3X-daF" secondAttribute="bottom" constant="30" id="XYY-ov-y3u"/>
+                        <constraint firstItem="N2D-Cc-BEH" firstAttribute="leading" secondItem="uQ5-6g-7Ah" secondAttribute="leading" id="bCq-Vx-imj"/>
+                        <constraint firstItem="wta-3X-daF" firstAttribute="centerX" secondItem="uQ5-6g-7Ah" secondAttribute="centerX" id="fuq-4B-oHq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="uQ5-6g-7Ah" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="3aU-m3-3jj"/>
+                <constraint firstItem="uQ5-6g-7Ah" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ReA-jq-b2t"/>
+                <constraint firstItem="uQ5-6g-7Ah" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Z9A-au-RPf"/>
+                <constraint firstItem="uQ5-6g-7Ah" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lie-JM-l6p"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backgroudImgView" destination="N2D-Cc-BEH" id="nfb-s8-EAR"/>
+                <outlet property="downloadBtn" destination="wta-3X-daF" id="8NU-vC-aK1"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="140"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="retBtnNormal" width="20" height="20"/>
+    </resources>
+</document>

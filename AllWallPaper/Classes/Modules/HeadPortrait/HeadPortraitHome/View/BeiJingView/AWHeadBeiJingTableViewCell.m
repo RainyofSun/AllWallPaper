@@ -11,6 +11,7 @@
 @interface AWHeadBeiJingTableViewCell ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *beiJingImgView;
+@property (weak, nonatomic) IBOutlet UILabel *typeLab;
 
 @end
 
@@ -27,8 +28,9 @@
     NSLog(@"DELLOC %@",NSStringFromClass(self.class));
 }
 
-- (void)loadHeadBeiJingCellSource:(NSArray<AWHeadGroupModel *> *)cellSource {
-    [self.beiJingImgView loadNetworkImg:cellSource.firstObject.imageUrlSmall bigPlaceHolder:NO];
+- (void)loadHeadBeiJingCellSource:(NSString *)imgUrl tynaName:(NSString *)name {
+    [self.beiJingImgView loadNetworkImg:imgUrl bigPlaceHolder:NO];
+    self.typeLab.text = name;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
