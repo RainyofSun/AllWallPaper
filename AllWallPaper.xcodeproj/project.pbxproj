@@ -406,7 +406,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		13451964257DDE0A0031F004 /* 主题商店-新款壁纸.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "主题商店-新款壁纸.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13451964257DDE0A0031F004 /* 壁纸-主题商店壁纸大全.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "壁纸-主题商店壁纸大全.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13451967257DDE0A0031F004 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		13451968257DDE0A0031F004 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		13451973257DDE0F0031F004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -925,7 +925,7 @@
 		13451965257DDE0A0031F004 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13451964257DDE0A0031F004 /* 主题商店-新款壁纸.app */,
+				13451964257DDE0A0031F004 /* 壁纸-主题商店壁纸大全.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2480,7 +2480,7 @@
 			);
 			name = AllWallPaper;
 			productName = AllWallPaper;
-			productReference = 13451964257DDE0A0031F004 /* 主题商店-新款壁纸.app */;
+			productReference = 13451964257DDE0A0031F004 /* 壁纸-主题商店壁纸大全.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -3118,7 +3118,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5B454UDJNW;
+				DEVELOPMENT_TEAM = 6LUHWWJ85K;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AllWallPaper/AppSource/PrefixHeader.pch";
 				INFOPLIST_FILE = AllWallPaper/AppSource/Info.plist;
@@ -3127,8 +3127,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = qd.AllWallPaper;
-				PRODUCT_NAME = "主题商店-新款壁纸";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qd.AllWallPaper;
+				PRODUCT_NAME = "壁纸-主题商店壁纸大全";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -3140,7 +3140,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5B454UDJNW;
+				DEVELOPMENT_TEAM = 6LUHWWJ85K;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AllWallPaper/AppSource/PrefixHeader.pch";
 				INFOPLIST_FILE = AllWallPaper/AppSource/Info.plist;
@@ -3149,8 +3149,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = qd.AllWallPaper;
-				PRODUCT_NAME = "主题商店-新款壁纸";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qd.AllWallPaper;
+				PRODUCT_NAME = "壁纸-主题商店壁纸大全";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

@@ -8,8 +8,8 @@
 
 #import "AppDelegate+Advertising.h"
 
-#define BUADKEY     @"5127767"
-#define SLOTID      @"945683634"
+#define BUADKEY     @"5127974"
+#define SLOTID      @"887414004"
 
 static char *const AdvertisingKey = "AdvertisingKey";
 static char *const networkKey     = "networkKey";
